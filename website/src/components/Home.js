@@ -20,17 +20,19 @@ class Home extends Component {
         <p className="display-3">At a Quick Glance:</p>
         <div className="container box-container align-self-center p-4">
           <div className="row">
-            <div className="col-6 col-md-3 box-tag-1">
+            <div className="col-md-3 box-tag-1">
               <br />
               <br />
               <br />
               <br />
-              <span className="pr-3 mr-3 text-left text-wrap">
-                <h1>Techincal Skills</h1>
+              <span className="pr-3 mr-3 text-left text-wrap ">
+                <h1>
+                  Technical <br /> Skills
+                </h1>
               </span>
             </div>
-            <div className="col-6 col-md-3 box-data-1">
-              <ul className="p-3 pl-5">
+            <div className="col-md-3 box-data-1">
+              <ul className="pr-3 pt-3 pl-5">
                 <li>Adobe Photoshop</li>
                 <li>Adobe Illistrator</li>
                 <li>Affinitiy Designer</li>
@@ -38,8 +40,8 @@ class Home extends Component {
                 <li>Blender</li>
               </ul>
             </div>
-            <div className="col-6 col-md-3 box-data-1">
-              <ul className="p-3 pl-5">
+            <div className="col-md-3 box-data-1">
+              <ul className="pr-3 pt-3 pl-5">
                 <li>Maya</li>
                 <li>ZBrush</li>
                 <li>Substance Painter</li>
@@ -47,7 +49,7 @@ class Home extends Component {
                 <li>Font Forge</li>
               </ul>
             </div>
-            <div className="col-6 col-md-3 box-data-1">
+            <div className="col-md-3 box-data-1">
               <ul className="pr-3 pl-5">
                 Learning:
                 <li>Unity</li>
@@ -57,7 +59,7 @@ class Home extends Component {
         </div>
         <div className="container box-container align-self-center p-4">
           <div className="row">
-            <div className="col-6 col-md-3 box-tag-1">
+            <div className="col-md-3 box-tag-1">
               <br />
               <br />
               <br />
@@ -69,8 +71,8 @@ class Home extends Component {
                 </h1>
               </span>
             </div>
-            <div className="col-6 col-md-3 box-data-1">
-              <ul className="p-3 pl-5">
+            <div className="col-md-3 box-data-1">
+              <ul className="pr-3 pt-3 pl-5">
                 <li>Strong Communication Skills</li>
                 <li>Good Listener</li>
                 <li>Persuasive</li>
@@ -78,8 +80,8 @@ class Home extends Component {
                 <li>Management</li>
               </ul>
             </div>
-            <div className="col-6 col-md-3 box-data-1">
-              <ul className="p-3 pl-5">
+            <div className="col-md-3 box-data-1">
+              <ul className="pr-3 pt-3 pl-5">
                 <li>Team Player</li>
                 <li>Collaborative</li>
                 <li>Independent</li>
@@ -88,8 +90,8 @@ class Home extends Component {
                 <li>Great Work Ethic</li>
               </ul>
             </div>
-            <div className="col-6 col-md-3 box-data-1">
-              <ul className="p-3 pl-5">
+            <div className="col-md-3 box-data-1">
+              <ul className="pr-3 pt-3 pl-5">
                 <li>Organized</li>
                 <li>Punctual</li>
                 <li>Quick Learner</li>
@@ -101,7 +103,7 @@ class Home extends Component {
         </div>
         <div className="container box-container align-self-center p-4">
           <div className="row">
-            <div className="col-6 col-md-3 box-tag-1">
+            <div className="col-md-3 box-tag-1">
               <br />
               <br />
               <br />
