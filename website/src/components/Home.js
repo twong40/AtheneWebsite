@@ -3,22 +3,19 @@ import React, { Component } from "react";
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      intro:
+        'My name is Athene Yip (pronounced "Ut-thee-nee") and I\'m an ' +
+        "environment and prop artist. I do both 2D and 3D art. I recently " +
+        "graduated from the University of California, Santa Cruz with a BA " +
+        "in game design."
+    };
   }
   render() {
     return (
       <div className="container">
         <p className="text-center display-1">Hi There!</p>
-        <p className="lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec
-          feugiat in fermentum posuere urna. Nec feugiat in fermentum posuere
-          urna nec. Pharetra magna ac placerat vestibulum lectus. Vitae
-          ultricies leo integer malesuada nunc vel. Eros donec ac odio tempor
-          orci dapibus. Fringilla urna porttitor rhoncus dolor purus non enim
-          praesent. Eu augue ut lectus arcu bibendum at. Nec nam aliquam sem et
-          tortor consequat id.
-        </p>
+        <p className="lead pr-5 pl-5">{this.state.intro}</p>
         <br />
         <p className="display-3">At a Quick Glance:</p>
         <div className="container box-container align-self-center p-4">
@@ -34,29 +31,26 @@ class Home extends Component {
             </div>
             <div className="col-6 col-md-3 box-data-1">
               <ul className="p-3 pl-5">
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illistrator</li>
+                <li>Affinitiy Designer</li>
+                <li>Paint.NET</li>
+                <li>Blender</li>
               </ul>
             </div>
             <div className="col-6 col-md-3 box-data-1">
               <ul className="p-3 pl-5">
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
+                <li>Maya</li>
+                <li>ZBrush</li>
+                <li>Substance Painter</li>
+                <li>Tiled</li>
+                <li>Font Forge</li>
               </ul>
             </div>
             <div className="col-6 col-md-3 box-data-1">
-              Learning:
-              <ul className="pr-3 pl-5 pd-3">
-                <li>List Item</li>
-                <li>List Item</li>
+              <ul className="pr-3 pl-5">
+                Learning:
+                <li>Unity</li>
               </ul>
             </div>
           </div>
@@ -68,39 +62,39 @@ class Home extends Component {
               <br />
               <br />
               <br />
-              <br />
-              <br />
               <span className="pr-3 mr-3 text-left text-wrap">
-                <h1>Soft Skills</h1>
+                <h1>
+                  Soft <br />
+                  Skills
+                </h1>
               </span>
             </div>
             <div className="col-6 col-md-3 box-data-1">
               <ul className="p-3 pl-5">
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
+                <li>Strong Communication Skills</li>
+                <li>Good Listener</li>
+                <li>Persuasive</li>
+                <li>Leadership</li>
+                <li>Management</li>
               </ul>
             </div>
             <div className="col-6 col-md-3 box-data-1">
               <ul className="p-3 pl-5">
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
+                <li>Team Player</li>
+                <li>Collaborative</li>
+                <li>Independent</li>
+                <li>Flexible</li>
+                <li>Friendly and Approachable</li>
+                <li>Great Work Ethic</li>
               </ul>
             </div>
             <div className="col-6 col-md-3 box-data-1">
               <ul className="p-3 pl-5">
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
+                <li>Organized</li>
+                <li>Punctual</li>
+                <li>Quick Learner</li>
+                <li>Works well under pressure</li>
+                <li>Adaptable</li>
               </ul>
             </div>
           </div>
@@ -121,10 +115,9 @@ class Home extends Component {
                 <br />
                 <br />
                 <li className="text-wrap pr-4 pt-3 pb-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Nec feugiat in fermentum posuere urna. Nec feugiat in
-                  fermentum posuere urna nec.
+                  Squish: A compeptitive party game where you must dodge and
+                  rearrange blocks to be the last survivor. Think Tetris, but
+                  you are stuck in it!
                 </li>
               </ul>
             </div>
