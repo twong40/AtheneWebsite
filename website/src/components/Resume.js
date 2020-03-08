@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import resume from "../assets/resume/ResumeDisplay.png";
-import "../App.css";
+import "../styles/Resume.css";
 class Resume extends Component {
   constructor(props) {
     super(props);

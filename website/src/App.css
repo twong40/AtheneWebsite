@@ -1,27 +1,3 @@
 .App {
   text-align: center;
 }
-
-.custom-navbar-mr {
-  flex: 1;
-  margin: auto !important;
-  display: flex;
-  justify-content: space-around;
-}
-
-.box-container {
-  width: 90%;
-}
-
-.box-tag-1 {
-  background-color: rgb(187, 133, 236);
-}
-
-.box-data-1 {
-  background-color: cornflowerblue;
-}
-
-.resume-resize {
-  max-width: 200%;
-  width: 115%;
-}
