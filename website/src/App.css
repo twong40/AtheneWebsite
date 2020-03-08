@@ -20,3 +20,8 @@
 .box-data-1 {
   background-color: cornflowerblue;
 }
+
+.resume-resize {
+  max-width: 200%;
+  width: 115%;
+}
