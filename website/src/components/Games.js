@@ -19,43 +19,44 @@ class Games extends Component {
       <div className="container">
         <br />
         <div className="container p-3">
-          <div className="row">
-            {preview}
-            {/* <div className="col-4">
-              <div className="hovereffect rounded">
-                <img
-                  className="img-fluid"
-                  src={this.state.preview[0].src}
-                  alt=""
-                />
-                <div className="overlay">
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <h2>Hover effect 3</h2>
-                  <a className="info" href="#">
-                    link here
-                  </a>
-                </div>
-              </div>
+          {/* <div className="row">{preview}</div> */}
+        </div>
+        <div className="container">
+          <div className="hovereffect rounded">
+            <img
+              className="img-fluid"
+              src={require("../assets/games/Squish/SquishPoster.png")}
+              alt=""
+            />
+            <div className="overlay">
+              <br />
+              <br />
+              <br />
+              <br />
+              <h2>TEST</h2>
+              <a className="info" href="#">
+                Click image to find out more
+              </a>
             </div>
-            <div className="col-4">
-              <div className="hovereffect rounded">
-                <img className="img-fluid" src="" alt="" />
-                <div className="overlay">
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <h2>Hover effect 3</h2>
-                  <a className="info" href="#">
-                    link here
-                  </a>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="hovereffect rounded">
+            <img
+              className=" img-resize img-fluid"
+              src={require("../assets/games/KillerOutfit/KillerOutfitEnvironment.png")}
+              alt=""
+            />
+            <div className="overlay">
+              <br />
+              <br />
+              <br />
+              <br />
+              <h2>TEST</h2>
+              <a className="info" href="#">
+                Click image to find out more
+              </a>
             </div>
-            <div className="col-4">col3</div> */}
           </div>
         </div>
       </div>
