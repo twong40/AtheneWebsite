@@ -4,28 +4,28 @@ import "../styles/Resume.css";
 class Resume extends Component {
   constructor(props) {
     super(props);
-    this.state = { width: 0, height: 0 };
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    this.state = { isMobile: false };
   }
 
   componentDidMount() {
-    this.updateWindowDimensions();
-    window.addEventListener("resize", this.updateWindowDimensions);
+    window.addEventListener("resize", this.resize.bind(this));
+    this.resize();
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.updateWindowDimensions);
+    window.removeEventListener("resize", this.resize);
   }
-
-  updateWindowDimensions() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  resize() {
+    let currentisMobile = window.innerWidth <= 760;
+    if (currentisMobile !== this.state.isMobile) {
+      this.setState({ isMobile: currentisMobile });
+    }
   }
   render() {
-    const smallResize = this.state.width < 450 && this.state.height < 850;
     return (
       <div className="container">
         <hr />
-        {smallResize ? (
+        {this.state.isMobile ? (
           <img src={resume} className="img-fluid p-3" alt="Resume"></img>
         ) : (
           <div className="container w-75 p-3">
@@ -42,7 +42,7 @@ class Resume extends Component {
               Download Resume
             </a>
           </span>
-          {smallResize && (
+          {this.state.isMobile && (
             <div className="container">
               <br />
             </div>
