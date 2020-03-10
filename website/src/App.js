@@ -7,7 +7,6 @@ import Games from "./components/Games";
 import GraphicDesign from "./components/GraphicDesign";
 import Home from "./components/Home";
 import Resume from "./components/Resume";
-import Work from "./components/Work";
 class App extends Component {
   render() {
     return (
@@ -47,11 +46,6 @@ class App extends Component {
                     aria-labelledby="navbarDropdownMenuLink"
                   >
                     <div className="dropdown-item">
-                      <Link className="navbar-brand nav-link active" to="/work">
-                        Work
-                      </Link>
-                    </div>
-                    <div className="dropdown-item">
                       <Link
                         className="navbar-brand nav-link active"
                         to="/games"
@@ -79,9 +73,6 @@ class App extends Component {
             </div>
           </nav>
           <Switch>
-            <Route path="/work">
-              <Work />
-            </Route>
             <Route path="/games">
               <Games />
             </Route>

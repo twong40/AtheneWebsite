@@ -3,24 +3,16 @@
   height: 30em;
   object-fit: cover;
 }
+.item {
+  max-height: 589.217px;
+  min-width: auto;
+}
 html {
   scroll-behavior: smooth;
 }
 
 .hidden {
   display: none;
-}
-
-.maindiv {
-  position: relative;
-}
-.mainoverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 10;
 }
 .hovereffect {
   width: 100%;
@@ -99,4 +91,10 @@ html {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+
+@media only screen and (max-width: 959px) {
+  .item {
+    max-height: 159.183px;
+  }
 }

@@ -41,11 +41,11 @@ class Games extends Component {
         {this.state.isMobile && (
           <h4>Click on an image to go to the project!</h4>
         )}
-        <div className="container p-3">
+        <div className="container-fluid p-3">
           <div className="row">{preview}</div>
         </div>
         <hr />
-        <div className="container">
+        {/* <div className="container-fluid p-3">
           <div
             id="carouselExampleIndicators"
             className="carousel slide"
@@ -55,7 +55,7 @@ class Games extends Component {
               <li
                 data-target="#carouselExampleIndicators"
                 data-slide-to="0"
-                className="active"
+                className="item active"
               ></li>
               <li
                 data-target="#carouselExampleIndicators"
@@ -65,9 +65,29 @@ class Games extends Component {
                 data-target="#carouselExampleIndicators"
                 data-slide-to="2"
               ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="3"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="4"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="5"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="6"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="7"
+              ></li>
             </ol>
             <div className="carousel-inner">
-              <div className="carousel-item active">
+              <div className="carousel-item item active overflow-hidden">
                 <img
                   className="d-block w-100"
                   src={require("../assets/games/Squish/SquishPoster.png")}
@@ -77,15 +97,50 @@ class Games extends Component {
               <div className="carousel-item">
                 <img
                   className="d-block w-100"
-                  src={require("../assets/games/Squish/SquishPoster.png")}
+                  src={require("../assets/games/Squish/Title Screen.png")}
                   alt="Second slide"
                 />
               </div>
               <div className="carousel-item">
                 <img
                   className="d-block w-100"
-                  src={require("../assets/games/Squish/SquishPoster.png")}
+                  src={require("../assets/games/Squish/Squish Lobby.png")}
                   alt="Third slide"
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  className="d-block w-100"
+                  src={require("../assets/games/Squish/Ready Stage.png")}
+                  alt="Fourth slide"
+                />
+              </div>
+              <div className="carousel-item item">
+                <img
+                  className="d-block w-100"
+                  src={require("../assets/games/Squish/Starting Formation.png")}
+                  alt="Fifth slide"
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  className="d-block w-100"
+                  src={require("../assets/games/Squish/Squish Bomb Block.png")}
+                  alt="Sixth slide"
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  className="d-block w-100"
+                  src={require("../assets/games/Squish/DJTable.png")}
+                  alt="Seventh slide"
+                />
+              </div>
+              <div className="carousel-item item">
+                <img
+                  className="d-block w-100"
+                  src={require("../assets/games/Squish/Block Dunk Goal.png")}
+                  alt="Eight slide"
                 />
               </div>
             </div>
@@ -114,7 +169,7 @@ class Games extends Component {
               <span className="sr-only">Next</span>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
