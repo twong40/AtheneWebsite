@@ -3,12 +3,196 @@
   height: 30em;
   object-fit: cover;
 }
-.item {
-  max-height: 589.217px;
-  min-width: auto;
+.overtext {
+  color: white;
 }
-html {
-  scroll-behavior: smooth;
+.slides {
+  height: 589.5px;
+  max-height: 589.5px;
+  background-size: cover;
+  background-position: center;
+}
+
+.Squish0 {
+  background-image: url("../assets/games/Squish/SquishPoster.png");
+}
+.Squish1 {
+  background-image: url("../assets/games/Squish/Title Screen.png");
+}
+.Squish2 {
+  background-image: url("../assets/games/Squish/Squish Lobby.png");
+}
+.Squish3 {
+  background-image: url("../assets/games/Squish/Ready Stage.png");
+}
+.Squish4 {
+  background-image: url("../assets/games/Squish/Starting Formation.png");
+}
+.Squish5 {
+  background-image: url("../assets/games/Squish/Squish Bomb Block.png");
+}
+.Squish6 {
+  background-image: url("../assets/games/Squish/DJTable.png");
+}
+.Squish7 {
+  background-image: url("../assets/games/Squish/Block Dunk Goal.png");
+}
+
+.KO0 {
+  background-image: url("../assets/games/KillerOutfit/KillerOutfitEnvironment.png");
+}
+.KO1 {
+  background-color: gray;
+  background-image: url("../assets/games/KillerOutfit/bannerr.jpg");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+.KO2 {
+  background-image: url("../assets/games/KillerOutfit/portfolio1.png");
+}
+.KO3 {
+  background-image: url("../assets/games/KillerOutfit/portfolio2.png");
+}
+.KO4 {
+  background-image: url("../assets/games/KillerOutfit/portfolio3.png");
+}
+.KO5 {
+  background-image: url("../assets/games/KillerOutfit/portfolio4.png");
+}
+.KO6 {
+  background-image: url("../assets/games/KillerOutfit/portfolio5.png");
+}
+.KO7 {
+  background-image: url("../assets/games/KillerOutfit/portfolio6.png");
+}
+
+.Hemo0 {
+  background-color: gray;
+  background-image: url("../assets/games/Hemogoblin//Title Screen.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+.Hemo1 {
+  background-image: url("../assets/games/Hemogoblin//Hemogoblin_Capture.PNG.png");
+}
+.Hemo2 {
+  background-image: url("../assets/games/Hemogoblin//Lvl1.png");
+}
+.Hemo3 {
+  background-image: url("../assets/games/Hemogoblin//Levl2.png");
+}
+.Hemo4 {
+  background-color: gray;
+  background-image: url("../assets/games/Hemogoblin//Hemo_Capture.PNG.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+.Hemo5 {
+  background-color: gray;
+  background-image: url("../assets/games/Hemogoblin//Hemo1_Capture.PNG.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+.Hemo6 {
+  background-color: gray;
+  background-image: url("../assets/games/Hemogoblin//Hemo2_Capture.PNG.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+
+.Df20 {
+  background-image: url("../assets/games/DinnerForTwo/20180321_130325.jpg");
+}
+.Df21 {
+  background-color: gray;
+  background-image: url("../assets/games/DinnerForTwo/20180321_130340_resize.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+.Df22 {
+  background-image: url("../assets/games/DinnerForTwo/20180321_130422.jpg");
+}
+.Df23 {
+  background-image: url("../assets/games/DinnerForTwo/20180321_130408.jpg");
+}
+.Df24 {
+  background-color: gray;
+  background-image: url("../assets/games/DinnerForTwo/20180407_234716.jpg");
+  transform: rotate(90deg);
+}
+.Df25 {
+  background-image: url("../assets/games/DinnerForTwo/20180311_163435.jpg");
+  transform: rotate(90deg);
+  background-color: gray;
+}
+
+.NG0 {
+  background-color: gray;
+  background-image: url("../assets/games/NormalGirl/Front_Only.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+.NG1 {
+  background-color: gray;
+  background-image: url("../assets/games/NormalGirl/Normal Girl_Capture.PNG.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+.NG2 {
+  background-color: gray;
+  background-image: url("../assets/games/NormalGirl/NG_3Capture.PNG.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+.NG3 {
+  background-color: gray;
+  background-image: url("../assets/games/NormalGirl/NG_2Capture.PNG.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+.NG4 {
+  background-image: url("../assets/games/NormalGirl/NGD_1Capture.PNG.png");
+}
+.NG5 {
+  background-image: url("../assets/games/NormalGirl/NGD_Capture.PNG.png");
+}
+.NG6 {
+  background-color: gray;
+  background-image: url("../assets/games/NormalGirl/NG_1Capture.PNG.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+
+.UCSC0 {
+  background-color: gray;
+  background-image: url("../assets/games/UCSCGuardians/whitemidas_resize1.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+.UCSC1 {
+  background-image: url("../assets/games/UCSCGuardians/Midas Poster_rev2_compressed.jpg");
+}
+.UCSC2 {
+  background-color: gray;
+  background-image: url("../assets/games/UCSCGuardians/slug_rosetta_stone.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+.UCSC3 {
+  background-image: url("../assets/games/UCSCGuardians/Deer_resize.png");
+}
+.UCSC4 {
+  background-image: url("../assets/games/UCSCGuardians/image0\ \(3\).jpg");
+}
+.UCSC5 {
+  background-image: url("../assets/games/UCSCGuardians/image0\ \(1\).jpg");
+}
+.UCSC6 {
+  background-image: url("../assets/games/UCSCGuardians/image0\ \(2\).jpg");
+}
+
+.other {
+  background-image: url("../assets/games/Other/MagicTree.png");
 }
 
 .hidden {

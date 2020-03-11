@@ -32,13 +32,13 @@ const images = [
   {
     id: 5,
     src: "UCSCGuardians/whitemidas_resize.png",
-    title: "UCSC Guardians",
+    title: "Guardians of UCSC",
     description: "Guardians of UCSC Poster"
   },
   {
     id: 6,
     src: "Other/MagicTree.png",
-    title: "Tree",
+    title: "Other 3D Work",
     description: "Other 3D Work Poster"
   }
 ];

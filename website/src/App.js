@@ -28,7 +28,7 @@ class App extends Component {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <div className="navbar-nav custom-navbar-mr">
-                <Link className="navbar-brand nav-link active" to="/">
+                <Link className="navbar-brand nav-link active" to="/Athene">
                   Home
                 </Link>
                 <div className="nav-item active dropdown">
@@ -48,7 +48,7 @@ class App extends Component {
                     <div className="dropdown-item">
                       <Link
                         className="navbar-brand nav-link active"
-                        to="/games"
+                        to="/Athene/games"
                       >
                         Games
                       </Link>
@@ -56,33 +56,39 @@ class App extends Component {
                     <div className="dropdown-item">
                       <Link
                         className="navbar-brand nav-link active"
-                        to="/graphicDesign"
+                        to="/Athene/graphicDesign"
                       >
                         Graphic Design
                       </Link>
                     </div>
                   </div>
                 </div>
-                <Link className="navbar-brand nav-link active" to="/resume">
+                <Link
+                  className="navbar-brand nav-link active"
+                  to="/Athene/resume"
+                >
                   Resume
                 </Link>
-                <Link className="navbar-brand nav-link active" to="/contact">
+                <Link
+                  className="navbar-brand nav-link active"
+                  to="/Athene/contact"
+                >
                   Contact
                 </Link>
               </div>
             </div>
           </nav>
           <Switch>
-            <Route path="/games">
+            <Route path="/Athene/games">
               <Games />
             </Route>
-            <Route path="/graphicDesign">
+            <Route path="/Athene/graphicDesign">
               <GraphicDesign />
             </Route>
-            <Route path="/resume">
+            <Route path="/Athene/resume">
               <Resume />
             </Route>
-            <Route path="/contact">
+            <Route path="/Athene/contact">
               <Contact />
             </Route>
             <Route path="/">
