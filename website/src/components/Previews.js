@@ -26,7 +26,11 @@ class previews extends Component {
             <br />
             <br />
             <h2>{this.props.title}</h2>
-            <a className="info" href="" onClick={this.props.handleScroll}>
+            <a
+              className="info"
+              href=""
+              onClick={e => this.props.handleScroll(this.props.title, e)}
+            >
               Click here to find out more
             </a>
           </div>

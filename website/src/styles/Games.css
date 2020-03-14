@@ -3,6 +3,10 @@
   height: 30em;
   object-fit: cover;
 }
+/* css */
+html {
+  scroll-behavior: smooth;
+}
 .overtext {
   color: white;
 }
@@ -117,12 +121,11 @@
 }
 .Df24 {
   background-color: gray;
-  background-image: url("../assets/games/DinnerForTwo/20180407_234716.jpg");
-  transform: rotate(90deg);
+  background-image: url("../assets/games/DinnerForTwo/20180407_234716_2.jpg");
 }
 .Df25 {
   background-image: url("../assets/games/DinnerForTwo/20180311_163435.jpg");
-  transform: rotate(90deg);
+  transform: rotate(90deg) scale(1.75, 1.75);
   background-color: gray;
 }
 
@@ -170,7 +173,10 @@
   background-repeat: no-repeat;
 }
 .UCSC1 {
-  background-image: url("../assets/games/UCSCGuardians/Midas Poster_rev2_compressed.jpg");
+  background-color: gray;
+  background-image: url("../assets/games/UCSCGuardians/redmidas_resize.png");
+  background-size: initial;
+  background-repeat: no-repeat;
 }
 .UCSC2 {
   background-color: gray;

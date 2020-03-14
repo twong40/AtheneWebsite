@@ -5,6 +5,10 @@ class CreateCarousel extends Component {
     super(props);
     this.createSlides = this.createSlides.bind(this);
     this.createSlideIndicator = this.createSlideIndicator.bind(this);
+    this.openLink = this.openLink.bind(this);
+  }
+  openLink() {
+    window.open(this.props.link, "_blank");
   }
   createSlideIndicator() {
     let ind = [];
@@ -102,7 +106,9 @@ class CreateCarousel extends Component {
         </div>
         {this.props.name !== "NG" && (
           <div className="text-center">
-            <button className="btn btn-primary shadow">Click Here</button>
+            <button className="btn btn-primary shadow" onClick={this.openLink}>
+              {this.props.btnText}
+            </button>
           </div>
         )}
       </div>

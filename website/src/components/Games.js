@@ -11,27 +11,78 @@ import hemoSlides from "../assets/games/Hemogoblin/slides.js";
 import df2slides from "../assets/games/DinnerForTwo/slides.js";
 import ngslides from "../assets/games/NormalGirl/slides.js";
 import ucscsslides from "../assets/games/UCSCGuardians/slides.js";
+
 class Games extends Component {
   constructor() {
     super();
-    this.state = { isMobile: false, squishRef: React.createRef() };
+    this.state = {
+      isMobile: false,
+      hasScrolled: false,
+      squishRef: React.createRef(),
+      koRef: React.createRef(),
+      hemoRef: React.createRef(),
+      df2Ref: React.createRef(),
+      ngRef: React.createRef(),
+      ucscRef: React.createRef(),
+      otherRef: React.createRef()
+    };
     this.handleScroll = this.handleScroll.bind(this);
   }
   componentDidMount() {
     window.addEventListener("resize", this.resize.bind(this));
+    document.addEventListener("scroll", this.trackScrolling);
     this.resize();
   }
 
   componentWillUnmount() {
     window.removeEventListener("resize", this.resize);
+    document.removeEventListener("scroll", this.trackScrolling);
   }
-  handleScroll = e => {
-    console.log(e.target.key);
+  handleScroll = (id, e) => {
     e.preventDefault();
-    window.scrollTo({
-      top: this.state.squishRef.current.offsetTop,
-      behavior: "smooth"
-    });
+    switch (id) {
+      case "Squish":
+        window.scrollTo(0, this.state.squishRef.current.offsetTop);
+        break;
+      case "Killer Outfit":
+        window.scrollTo(0, this.state.koRef.current.offsetTop);
+        break;
+      case "Hemogoblin":
+        window.scrollTo(0, this.state.hemoRef.current.offsetTop);
+        break;
+      case "Dinner for Two":
+        window.scrollTo(0, this.state.df2Ref.current.offsetTop);
+        break;
+      case "Normal Girl":
+        window.scrollTo(0, this.state.ngRef.current.offsetTop);
+        break;
+      case "Guardians of UCSC":
+        window.scrollTo(0, this.state.ucscRef.current.offsetTop);
+        break;
+      case "Other 3D Work":
+        window.scrollTo(0, this.state.otherRef.current.offsetTop);
+        break;
+      default:
+        return;
+    }
+  };
+  isBottom(el) {
+    return el.getBoundingClientRect().bottom <= window.innerHeight;
+  }
+  trackScrolling = () => {
+    if (
+      document.getElementById("shortcut").scrollTop > 100 &&
+      !this.state.hasScrolled
+    ) {
+      console.log("scroll");
+      this.setState({ hasScrolled: true });
+    } else if (
+      document.getElementById("shortcut").scrollTop < 100 &&
+      this.state.hasScrolled
+    ) {
+      console.log("not scrolled");
+      this.setState({ hasScrolled: false });
+    }
   };
   resize() {
     let currentisMobile = window.innerWidth <= 760;
@@ -59,47 +110,71 @@ class Games extends Component {
         {this.state.isMobile && (
           <h4>Click on an image to go to the project!</h4>
         )}
-        <div className="row">{preview}</div>
+        <div id="shortcut" className="row">
+          {preview}
+        </div>
         <div ref={this.state.squishRef}>
           <CreateCarousel
             name="Squish"
             num="8"
             slides={squishSlides}
             title="Squish"
+            btnText="View and Play Squish"
+            link="https://www.play-squish.com/game"
           />
         </div>
-        <CreateCarousel
-          name="KO"
-          num="8"
-          slides={KOSlides}
-          title="Killer Outfit"
-        />
-        <CreateCarousel
-          name="Hemo"
-          num="7"
-          slides={hemoSlides}
-          title="Hemogolbin"
-        />
-        <CreateCarousel
-          name="Df2"
-          num="6"
-          slides={df2slides}
-          title="Dinner For Two"
-        />
-        <CreateCarousel
-          name="NG"
-          num="7"
-          slides={ngslides}
-          title="Normal Girl"
-        />
-        <CreateCarousel
-          name="UCSC"
-          num="7"
-          slides={ucscsslides}
-          title="Guardians of UCSC"
-        />
+        <div ref={this.state.koRef}>
+          <CreateCarousel
+            name="KO"
+            num="8"
+            slides={KOSlides}
+            title="Killer Outfit"
+            btnText="View KillerOutfit"
+            link="https://diamonddustgames.wixsite.com/killeroutfitgame"
+          />
+        </div>
+        <div ref={this.state.hemoRef}>
+          <CreateCarousel
+            name="Hemo"
+            num="7"
+            slides={hemoSlides}
+            title="Hemogolbin"
+            btnText="Play Hemogoblin"
+            link="https://jhusting.itch.io/hemogoblin"
+          />
+        </div>
+        <div ref={this.state.df2Ref}>
+          <CreateCarousel
+            name="Df2"
+            num="6"
+            slides={df2slides}
+            title="Dinner For Two"
+            btnText="Watch Dinner For Two"
+            link="http://www.youtube.com/watch?v=U7AoypiPOuc"
+          />
+        </div>
+        <div ref={this.state.ngRef}>
+          <CreateCarousel
+            name="NG"
+            num="7"
+            slides={ngslides}
+            title="Normal Girl"
+            btnText=""
+            link=""
+          />
+        </div>
+        <div ref={this.state.ucscRef}>
+          <CreateCarousel
+            name="UCSC"
+            num="7"
+            slides={ucscsslides}
+            title="Guardians of UCSC"
+            btnText="View Guardians of UCSC"
+            link="https://goucsc.weebly.com/"
+          />
+        </div>
         <hr />
-        <div className="container-fluid p-3">
+        <div ref={this.state.otherRef} className="container-fluid p-3">
           <div className="slides other">
             <div className="row justify-content-around">
               <div className="col-4">
