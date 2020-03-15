@@ -12,7 +12,27 @@ class App extends Component {
     return (
       <Router>
         <div className="container">
-          <h2>Athene Yip</h2>
+          <div class="row justify-content-between">
+            <div class="col-4 p-3">
+              <h2>Athene Yip</h2>
+            </div>
+            <div class="col-4 pl-5 pt-5 pr-5 pb-3">
+              <a href="https://twitter.com/atheneyip" target="_blank">
+                <img
+                  className="mx-auto p-1 rounded float-right"
+                  src={require("./assets/twitter.png")}
+                  alt="Twitter"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/atheneyip/" target="_blank">
+                <img
+                  className="mx-auto p-1 rounded float-right"
+                  src={require("./assets/linkedin.png")}
+                  alt="LinkedIn"
+                />
+              </a>
+            </div>
+          </div>
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             {/* <a className="navbar-brand">Test</a> */}
             <button

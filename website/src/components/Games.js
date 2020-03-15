@@ -101,11 +101,8 @@ class Games extends Component {
           text="Back to Top"
         ></Fab>
         <br />
-        {this.state.isMobile && (
-          <h4>Click on an image to go to the project!</h4>
-        )}
         <div id="shortcut" className="row">
-          {preview}
+          {preview}i
         </div>
         <div ref={this.state.squishRef}>
           <CreateCarousel
