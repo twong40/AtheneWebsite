@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+import { Fab } from "react-tiny-fab";
+
 import "../styles/Games.css";
+import "react-tiny-fab/dist/styles.css";
 
 import images from "../assets/games/preview.js";
 import Previews from "./Previews";
@@ -27,17 +30,20 @@ class Games extends Component {
       otherRef: React.createRef()
     };
     this.handleScroll = this.handleScroll.bind(this);
+    this.toTop = this.toTop.bind(this);
   }
   componentDidMount() {
     window.addEventListener("resize", this.resize.bind(this));
-    document.addEventListener("scroll", this.trackScrolling);
     this.resize();
   }
 
   componentWillUnmount() {
     window.removeEventListener("resize", this.resize);
-    document.removeEventListener("scroll", this.trackScrolling);
   }
+  toTop = e => {
+    e.preventDefault();
+    window.scrollTo(0, 0);
+  };
   handleScroll = (id, e) => {
     e.preventDefault();
     switch (id) {
@@ -66,24 +72,6 @@ class Games extends Component {
         return;
     }
   };
-  isBottom(el) {
-    return el.getBoundingClientRect().bottom <= window.innerHeight;
-  }
-  trackScrolling = () => {
-    if (
-      document.getElementById("shortcut").scrollTop > 100 &&
-      !this.state.hasScrolled
-    ) {
-      console.log("scroll");
-      this.setState({ hasScrolled: true });
-    } else if (
-      document.getElementById("shortcut").scrollTop < 100 &&
-      this.state.hasScrolled
-    ) {
-      console.log("not scrolled");
-      this.setState({ hasScrolled: false });
-    }
-  };
   resize() {
     let currentisMobile = window.innerWidth <= 760;
     if (currentisMobile !== this.state.isMobile) {
@@ -106,6 +94,12 @@ class Games extends Component {
     let preview = this.createPreview();
     return (
       <div className="container">
+        <Fab
+          icon="^"
+          mainButtonStyles={{ backgroundColor: "#e74ccc" }}
+          onClick={this.toTop}
+          text="Back to Top"
+        ></Fab>
         <br />
         {this.state.isMobile && (
           <h4>Click on an image to go to the project!</h4>

@@ -8461,6 +8461,11 @@ react-scripts@3.4.0:
   optionalDependencies:
     fsevents "2.1.2"
 
+react-tiny-fab@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/react-tiny-fab/-/react-tiny-fab-3.4.0.tgz#65edafa65826aaab8da8cca5f6e099ee81c52eaa"
+  integrity sha512-8R1z0k5I/tcQFDDJHGRycyiAm991htdvgpaSgT1dB83SiG89L1VQJE7TVEaoDng8R50+fxLZaoOCUkNFmZBKgA==
+
 react@^16.13.0:
   version "16.13.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.0.tgz#d046eabcdf64e457bbeed1e792e235e1b9934cf7"
