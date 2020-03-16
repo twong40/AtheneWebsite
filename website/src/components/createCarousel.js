@@ -27,7 +27,7 @@ class CreateCarousel extends Component {
           <li
             key={i}
             data-target={"#" + this.props.name}
-            data-slide-to="1"
+            data-slide-to={i}
           ></li>
         );
       }
