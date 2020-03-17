@@ -3,9 +3,42 @@
 }
 
 .box-tag-1 {
-  background-color: rgb(187, 133, 236);
+  background-color: #c4c2ff;
+  max-height: 216.8px;
+  height: 216.8px;
 }
 
 .box-data-1 {
-  background-color: cornflowerblue;
+  background-color: #d7bce8;
+}
+
+.box-data-2 {
+  background-color: #8884ff;
+}
+.home-title {
+  font-size: 2.1em;
+}
+.home-list {
+  font-size: 1.1em;
+}
+@font-face {
+  font-family: Great-Vibes;
+  src: url("../assets/fonts/great-vibes.ttf") format("truetype");
+}
+@font-face {
+  font-family: Barlow-ExtraLight;
+  src: url("../assets/fonts/barlow-extra-light.ttf") format("truetype");
+}
+@font-face {
+  font-family: Montserrat-Light;
+  src: url("../assets/fonts/montserrat-light.ttf") format("truetype");
+}
+.font-greatvibes {
+  font-family: Great-Vibes;
+}
+.font-barlowextralight {
+  font-family: Barlow-ExtraLight;
+}
+.font-montserratlight {
+  font-family: Montserrat-Light;
 }

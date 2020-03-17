@@ -24,7 +24,7 @@ class Resume extends Component {
   render() {
     return (
       <div className="container">
-        <hr />
+        <hr className="style-two" />
         {this.state.isMobile ? (
           <img src={resume} className="img-fluid p-3" alt="Resume"></img>
         ) : (
@@ -32,6 +32,7 @@ class Resume extends Component {
             <img src={resume} className="img-fluid" alt="Resume"></img>
           </div>
         )}
+        <hr className="style-two" />
         <div className="text-center">
           <span className="p-3 m-3">
             <a
