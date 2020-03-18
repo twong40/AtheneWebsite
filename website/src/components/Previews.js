@@ -13,7 +13,7 @@ class previews extends Component {
   render() {
     return (
       <div className={this.props.isMobile ? "container p-3" : "col-4 p-3"}>
-        <div className="hovereffect rounded">
+        <div className="hovereffect rounded font-montserratlight">
           <img
             className="img-resize img-fluid"
             src={require("../assets/games/" + this.props.src)}
@@ -30,6 +30,8 @@ class previews extends Component {
               className="info"
               href=""
               onClick={e => this.props.handleScroll(this.props.title, e)}
+              data-target={this.props.name}
+              data-slide-to={0}
             >
               Click here to find out more
             </a>

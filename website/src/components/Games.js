@@ -79,12 +79,13 @@ class Games extends Component {
     }
   }
   createPreview() {
-    return images.map(({ id, src, title, description }) => (
+    return images.map(({ id, src, title, description, name }) => (
       <Previews
         key={id}
         src={src}
         title={title}
         description={description}
+        name={name}
         handleScroll={this.handleScroll}
         isMobile={this.state.isMobile}
       />

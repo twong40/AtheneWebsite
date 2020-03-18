@@ -30,6 +30,10 @@
   src: url("../assets/fonts/barlow-extra-light.ttf") format("truetype");
 }
 @font-face {
+  font-family: Barlow-Medium;
+  src: url("../assets/fonts/barlow-medium.ttf") format("truetype");
+}
+@font-face {
   font-family: Montserrat-Light;
   src: url("../assets/fonts/montserrat-light.ttf") format("truetype");
 }
@@ -38,6 +42,9 @@
 }
 .font-barlowextralight {
   font-family: Barlow-ExtraLight;
+}
+.font-barlowmedium {
+  font-family: Barlow-Medium;
 }
 .font-montserratlight {
   font-family: Montserrat-Light;

@@ -45,14 +45,21 @@ class CreateCarousel extends Component {
           {id === 0 && (
             <div className="row justify-content-around">
               <div className="col-4">
-                <div className="display-3 p-3 overtext">{this.props.title}</div>
-                <div className="p-3 overtext"> {leftText}</div>
+                <div className="display-4 p-3 overtext font-barlowmedium">
+                  {this.props.title}
+                </div>
+                <div className="p-3 overtext font-barlowextralight">
+                  {" "}
+                  {leftText}
+                </div>
               </div>
-              <div className="col-4">
+              <div className="col-4 font-barlowextralight">
                 <br />
                 <br />
                 <br />
-                <div className="p-3 overtext">What I did:</div>
+                <div className="p-3 overtext font-weight-bolder">
+                  What I did:
+                </div>
                 <div className="p-3 overtext">{rightText}</div>
               </div>
             </div>

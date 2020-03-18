@@ -13,8 +13,8 @@ class App extends Component {
       <Router>
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-4 p-3">
-              <h2>Athene Yip</h2>
+            <div className="col-4 p-3 font-barlowextralight banner-shadow display-4">
+              Athene Yip
             </div>
             <div className="col-4 pl-5 pt-5 pr-5 pb-3">
               <a
@@ -55,7 +55,7 @@ class App extends Component {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
-              <div className="navbar-nav custom-navbar-mr">
+              <div className="navbar-nav custom-navbar-mr font-montserratlight">
                 <Link className="navbar-brand nav-link active" to="/Athene">
                   Home
                 </Link>

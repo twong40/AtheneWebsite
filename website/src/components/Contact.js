@@ -77,10 +77,10 @@ class Contact extends Component {
     return (
       <div className="container">
         <br />
-        <h1>Contact Me</h1> <hr></hr>
+        <h1 className="font-barlowextralight">Contact Me</h1> <hr></hr>
         <div className="row">
           <div className="col-6 col-md-3">INSERT PICTURE HERE</div>
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-3 font-barlowextralight">
             <hr />
             <span>
               Email:
@@ -91,7 +91,7 @@ class Contact extends Component {
           </div>
           <div className="col-6 col-md-5">
             <form onSubmit={this.handleSubmit}>
-              <div className="form-row mt-1">
+              <div className="form-row mt-1 font-montserratlight">
                 <div className="col">
                   <input
                     className="form-control"
@@ -117,7 +117,7 @@ class Contact extends Component {
                   />
                 </div>
               </div>
-              <div className="form-group">
+              <div className="form-group font-montserratlight">
                 <input
                   className="form-control mt-3"
                   type="subject"
@@ -129,7 +129,7 @@ class Contact extends Component {
                   onChange={this.handleChange}
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group font-montserratlight">
                 <textarea
                   className="form-control"
                   type="text-area"
