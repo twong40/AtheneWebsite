@@ -7,4 +7,8 @@
 
 .banner-shadow {
   text-shadow: 1.75px 1.75px #5e5959;
+  font-weight: bolder;
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
 }

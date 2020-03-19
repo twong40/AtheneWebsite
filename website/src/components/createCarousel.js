@@ -73,7 +73,10 @@ class CreateCarousel extends Component {
     let slide = this.createSlides();
     return (
       <div className="container-fluid">
-        <hr />
+        <hr className="hr-divider mb-0" />
+        <span className="hr-title">
+          <hr className="hr-text m-0" data-content={this.props.title} />
+        </span>
         <div className="container">
           <div className="d-block w-100"></div>
         </div>

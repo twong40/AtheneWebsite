@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styles/GraphicDesign.css";
+import "../styles/GraphicDesign.scss";
 
 class GraphicDesign extends Component {
   constructor(props) {
@@ -63,7 +63,7 @@ class GraphicDesign extends Component {
             <span className="sr-only">Next</span>
           </a>
         </div>
-        <hr />
+        <hr className="separator-side separator--dotter" />
         <div className="container">
           <span className="p-2">
             <a
@@ -100,6 +100,7 @@ class GraphicDesign extends Component {
             </a>
           </span>
         </div>
+        <hr className="separator-side separator--dotter" />
       </div>
     );
   }

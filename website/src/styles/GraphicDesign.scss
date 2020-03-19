@@ -1,3 +1,15 @@
+.separator-side {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+}
+.separator--dotter {
+  border: 0;
+  border-bottom: 5px dotted black;
+
+  width: 0;
+  animation: separator-width 1.5s ease-out forwards;
+}
 .graphic-designs {
   height: 700px;
   max-height: 700px;

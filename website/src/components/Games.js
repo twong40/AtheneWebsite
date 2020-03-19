@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Fab } from "react-tiny-fab";
 
-import "../styles/Games.css";
+import "../styles/Games.scss";
 import "react-tiny-fab/dist/styles.css";
 
 import images from "../assets/games/preview.js";
@@ -103,7 +103,7 @@ class Games extends Component {
         ></Fab>
         <br />
         <div id="shortcut" className="row">
-          {preview}i
+          {preview}
         </div>
         <div ref={this.state.squishRef}>
           <CreateCarousel
@@ -130,7 +130,7 @@ class Games extends Component {
             name="Hemo"
             num="7"
             slides={hemoSlides}
-            title="Hemogolbin"
+            title="Hemogoblin"
             btnText="Play Hemogoblin"
             link="https://jhusting.itch.io/hemogoblin"
           />
@@ -165,7 +165,7 @@ class Games extends Component {
             link="https://goucsc.weebly.com/"
           />
         </div>
-        <hr />
+        <hr className="hr-divider" />
         <div ref={this.state.otherRef} className="container-fluid p-3">
           <div className="slides other">
             <div className="row justify-content-around">

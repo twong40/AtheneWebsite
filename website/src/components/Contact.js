@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "../styles/Contact.scss";
 const key = require("../config");
 class Contact extends Component {
   constructor(props) {
@@ -77,19 +78,38 @@ class Contact extends Component {
     return (
       <div className="container">
         <br />
-        <h1 className="font-barlowextralight">Contact Me</h1> <hr></hr>
+        <h1 className="font-barlowextralight">Contact Me</h1>{" "}
+        <hr className="separator separator--line" />
         <div className="row">
-          <div className="col-6 col-md-3">INSERT PICTURE HERE</div>
-          <div className="col-6 col-md-3 font-barlowextralight">
-            <hr />
-            <span>
+          <div className="col-md-3">
+            <div className="letter-image">
+              <div className="animated-mail">
+                <div className="back-fold"></div>
+                <div className="letter">
+                  <div className="letter-border"></div>
+                  <div className="letter-title"></div>
+                  <div className="letter-context"></div>
+                  <div className="letter-stamp">
+                    <div className="letter-stamp-inner"></div>
+                  </div>
+                </div>
+                <div className="top-fold"></div>
+                <div className="body"></div>
+                <div className="left-fold"></div>
+              </div>
+              <div className="letter-shadow"></div>
+            </div>
+          </div>
+          <div className="col-md-3 font-barlowextralight">
+            <hr className="separator separator--dots" />
+            <span className="pl-5">
               Email:
               <br />
-              athene.yip@gmail.com
+              <span className="pl-5">athene.yip@gmail.com</span>
             </span>
-            <hr />
+            <hr className="separator separator--dots" />
           </div>
-          <div className="col-6 col-md-5">
+          <div className="col-md-5">
             <form onSubmit={this.handleSubmit}>
               <div className="form-row mt-1 font-montserratlight">
                 <div className="col">
@@ -142,12 +162,12 @@ class Contact extends Component {
                 />
               </div>
               <button
-                className="btn btn-info btn-block my-4"
+                className="btn btn-block my-4 btn-send draw-border text-dark"
                 type="submit"
                 value="submit"
                 disabled={this.state.loading || !isValid}
               >
-                Send
+                Send Mail
               </button>
             </form>
             {this.state.errors && this.state.status === "ERROR" && (

@@ -37,10 +37,15 @@ class Resume extends Component {
           <span className="p-3 m-3">
             <a
               href="../assets/resume/AtheneYip_Resume.pdf"
-              className="btn btn-primary shadow"
+              className="c-button c-button--gooey"
               download
             >
               Download Resume
+              <div className="c-button__blobs">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </a>
           </span>
           {this.state.isMobile && (
@@ -51,13 +56,41 @@ class Resume extends Component {
           <span className="p-3 m-3">
             <a
               href="../assets/resume/AtheneYip_Resume_bw.pdf"
-              className="btn btn-secondary shadow"
+              className="c-button c-button--grey"
               download
             >
               Black & White Version
+              <div className="c-button__blobs-grey">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </a>
           </span>
         </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          style={{ height: 0 }}
+        >
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="10"
+                result="blur"
+              ></feGaussianBlur>
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                result="goo"
+              ></feColorMatrix>
+              <feBlend in="SourceGraphic" in2="goo"></feBlend>
+            </filter>
+          </defs>
+        </svg>
       </div>
     );
   }

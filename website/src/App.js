@@ -81,6 +81,7 @@ class App extends Component {
                         Games
                       </Link>
                     </div>
+                    <div className="dropdown-divider"></div>
                     <div className="dropdown-item">
                       <Link
                         className="navbar-brand nav-link active"
