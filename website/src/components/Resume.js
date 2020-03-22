@@ -40,7 +40,11 @@ class Resume extends Component {
               className="c-button c-button--gooey"
               download
             >
-              Download Resume
+              Download Resume&nbsp;
+              <img
+                src="https://img.icons8.com/clouds/100/000000/download.png"
+                width="25"
+              />
               <div className="c-button__blobs">
                 <div></div>
                 <div></div>
@@ -59,7 +63,11 @@ class Resume extends Component {
               className="c-button c-button--grey"
               download
             >
-              Black & White Version
+              Black & White Version&nbsp;
+              <img
+                src="https://img.icons8.com/android/24/000000/download.png"
+                width="17"
+              />
               <div className="c-button__blobs-grey">
                 <div></div>
                 <div></div>

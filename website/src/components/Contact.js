@@ -75,6 +75,7 @@ class Contact extends Component {
   }
   render() {
     const isValid = this.validate();
+    const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.state.email);
     return (
       <div className="container">
         <br />
@@ -109,57 +110,81 @@ class Contact extends Component {
             </span>
             <hr className="separator separator--dots" />
           </div>
-          <div className="col-md-5">
+          <div className="col-md-5 font-montserratlight">
             <form onSubmit={this.handleSubmit}>
-              <div className="form-row mt-1 font-montserratlight">
-                <div className="col">
-                  <input
-                    className="form-control"
-                    type="name"
-                    htmlFor="name"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    value={this.state.name}
-                    onChange={this.handleChange}
-                  />
-                </div>
-                <div className="col">
-                  <input
-                    className="form-control"
-                    type="email"
-                    htmlFor="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    value={this.state.email}
-                    onChange={this.handleChange}
-                  />
-                </div>
-              </div>
-              <div className="form-group font-montserratlight">
+              <div className="form-group position-relative pt-2">
                 <input
-                  className="form-control mt-3"
-                  type="subject"
+                  className="input-forms"
+                  type="text"
+                  htmlFor="name"
+                  id="name"
+                  name="name"
+                  value={this.state.name}
+                  onChange={this.handleChange}
+                  required
+                />
+                <label className="label-forms pt-2" for="name">
+                  Your Name:
+                </label>
+              </div>
+              <div className="form-group position-relative pt-2">
+                <input
+                  className="input-forms"
+                  type="text"
+                  htmlFor="email"
+                  id="email"
+                  name="email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                  required
+                />
+                <label className="label-forms pt-2" for="email">
+                  Your Email:
+                </label>
+                {this.state.email && !isEmail && (
+                  <div className="alert alert-danger" role="alert">
+                    <span
+                      className="glyphicon glyphicon-exclamation-sign"
+                      aria-hidden="true"
+                    ></span>
+                    <span className="sr-only">Error:</span>
+                    <img
+                      src="https://img.icons8.com/ios-glyphs/48/000000/high-importance.png"
+                      width="23"
+                    />
+                    Enter a valid email address
+                  </div>
+                )}
+              </div>
+              <div className="form-group position-relative pt-2">
+                <input
+                  className="input-forms"
+                  type="text"
                   htmlFor="subject"
                   id="subject"
                   name="subject"
-                  placeholder="Subject"
                   value={this.state.subject}
                   onChange={this.handleChange}
+                  required
                 />
+                <label className="label-forms pt-2" for="subject">
+                  The Subject:
+                </label>
               </div>
-              <div className="form-group font-montserratlight">
+              <div className="form-group position-relative pt-2">
                 <textarea
-                  className="form-control"
+                  className="input-forms"
                   type="text-area"
                   htmlFor="message"
                   id="message"
                   name="message"
-                  placeholder="Message"
                   value={this.state.message}
                   onChange={this.handleChange}
+                  required
                 />
+                <label className="label-forms pt-2" for="message">
+                  The Message:
+                </label>
               </div>
               <button
                 className="btn btn-block my-4 btn-send draw-border text-dark"
@@ -167,14 +192,30 @@ class Contact extends Component {
                 value="submit"
                 disabled={this.state.loading || !isValid}
               >
-                Send Mail
+                Send Mail&nbsp;
+                <img
+                  src="https://img.icons8.com/dusk/64/000000/send-mass-email.png"
+                  width="23"
+                />
               </button>
             </form>
             {this.state.errors && this.state.status === "ERROR" && (
-              <div className="alert alert-danger">{this.state.errors}</div>
+              <div className="alert alert-danger">
+                <img
+                  src="https://img.icons8.com/ios-glyphs/48/000000/high-importance.png"
+                  width="23"
+                />
+                {this.state.errors}
+              </div>
             )}
             {!this.state.errors && this.state.status === "SUCCESS" && (
-              <div className="alert alert-success">Thanks!</div>
+              <div className="alert alert-success">
+                <img
+                  src="https://img.icons8.com/color/48/000000/ok--v1.png"
+                  width="23"
+                />
+                Thanks!
+              </div>
             )}
           </div>
         </div>

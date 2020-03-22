@@ -56,12 +56,15 @@ class App extends Component {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <div className="navbar-nav custom-navbar-mr font-montserratlight">
-                <Link className="navbar-brand nav-link active" to="/Athene">
+                <Link
+                  className="navbar-brand nav-link active hvr-underline-from-center"
+                  to="/Athene"
+                >
                   Home
                 </Link>
                 <div className="nav-item active dropdown">
                   <span
-                    className="navbar-brand nav-link dropdown-toggle"
+                    className="navbar-brand nav-link dropdown-toggle hvr-underline-from-center"
                     id="navbarDropdownMenuLink"
                     data-toggle="dropdown"
                     aria-haspopup="true"
@@ -75,7 +78,7 @@ class App extends Component {
                   >
                     <div className="dropdown-item">
                       <Link
-                        className="navbar-brand nav-link active"
+                        className="navbar-brand nav-link active hvr-underline-from-center"
                         to="/Athene/games"
                       >
                         Games
@@ -84,7 +87,7 @@ class App extends Component {
                     <div className="dropdown-divider"></div>
                     <div className="dropdown-item">
                       <Link
-                        className="navbar-brand nav-link active"
+                        className="navbar-brand nav-link active hvr-underline-from-center"
                         to="/Athene/graphicDesign"
                       >
                         Graphic Design
@@ -93,13 +96,13 @@ class App extends Component {
                   </div>
                 </div>
                 <Link
-                  className="navbar-brand nav-link active"
+                  className="navbar-brand nav-link active hvr-underline-from-center"
                   to="/Athene/resume"
                 >
                   Resume
                 </Link>
                 <Link
-                  className="navbar-brand nav-link active"
+                  className="navbar-brand nav-link active hvr-underline-from-center"
                   to="/Athene/contact"
                 >
                   Contact
