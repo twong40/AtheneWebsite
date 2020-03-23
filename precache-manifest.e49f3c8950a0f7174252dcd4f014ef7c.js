@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8e3e4c3fd9faa82088ebc601a0627767",
+    "revision": "19ad4a2bb4b400f7cd1387aad078e39e",
     "url": "/AtheneWebsite/index.html"
   },
   {
-    "revision": "15f5d19f28f5f7ce647b",
-    "url": "/AtheneWebsite/static/css/main.f6910c8f.chunk.css"
+    "revision": "59bb9863cfbb332046a9",
+    "url": "/AtheneWebsite/static/css/2.64f487c0.chunk.css"
   },
   {
-    "revision": "d7eb9cd5a93ff77003f5",
-    "url": "/AtheneWebsite/static/js/2.d791fb21.chunk.js"
+    "revision": "42ec5f056b2f0629b162",
+    "url": "/AtheneWebsite/static/css/main.5d92c095.chunk.css"
+  },
+  {
+    "revision": "59bb9863cfbb332046a9",
+    "url": "/AtheneWebsite/static/js/2.739a913d.chunk.js"
   },
   {
     "revision": "f231859d6585c4cd5f80c344783ed269",
-    "url": "/AtheneWebsite/static/js/2.d791fb21.chunk.js.LICENSE.txt"
+    "url": "/AtheneWebsite/static/js/2.739a913d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "15f5d19f28f5f7ce647b",
-    "url": "/AtheneWebsite/static/js/main.99dbc521.chunk.js"
+    "revision": "42ec5f056b2f0629b162",
+    "url": "/AtheneWebsite/static/js/main.ef109ef6.chunk.js"
   },
   {
     "revision": "9dae4fd7db5e8724a8f5",
@@ -36,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AtheneWebsite/static/media/20180311_163355_HDR.1572e127.jpg"
   },
   {
-    "revision": "aff8919a09bdfe9674ce5f8d96ad8db5",
-    "url": "/AtheneWebsite/static/media/20180311_163435.aff8919a.jpg"
+    "revision": "a953b3249f58886d83ced53e05141c3b",
+    "url": "/AtheneWebsite/static/media/20180311_163435.a953b324.jpg"
   },
   {
     "revision": "d3db7ef137d42c42ecf271ab7c4f6123",
@@ -80,12 +84,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AtheneWebsite/static/media/20180407_234716.5cb7d449.jpg"
   },
   {
+    "revision": "944207b2f38a17bdc57aca31852994d0",
+    "url": "/AtheneWebsite/static/media/20180407_234716_2.944207b2.jpg"
+  },
+  {
     "revision": "9ffb026d95d40e0802bd767027db12f5",
     "url": "/AtheneWebsite/static/media/20180407_234754.9ffb026d.jpg"
   },
   {
     "revision": "9c9124a8438114b2939015da7815b804",
     "url": "/AtheneWebsite/static/media/20180407_234804.9c9124a8.jpg"
+  },
+  {
+    "revision": "f0c7a24fa9c4631d3300489fd7ea4c7c",
+    "url": "/AtheneWebsite/static/media/AY_Exercise_6-1_Animation.f0c7a24f.gif"
   },
   {
     "revision": "2630732625892de7a327276b58bae85f",
@@ -138,6 +150,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3a1baf01d1161472b377577b48eac6c4",
     "url": "/AtheneWebsite/static/media/KillerOutfitEnvironment.3a1baf01.png"
+  },
+  {
+    "revision": "641ca2954c1bc77ab38573a339052b3f",
+    "url": "/AtheneWebsite/static/media/LanternPrint_MoonClouds.641ca295.png"
   },
   {
     "revision": "95bfa9c9bf23d547fcd9346c94ec28dc",
@@ -260,8 +276,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AtheneWebsite/static/media/Zaraha.3d5c49f6.png"
   },
   {
+    "revision": "badfdda2640df8b061c820e5218fabb2",
+    "url": "/AtheneWebsite/static/media/background-image.badfdda2.jpg"
+  },
+  {
     "revision": "08392cf08edf41e87ef762ac66a6f0ea",
     "url": "/AtheneWebsite/static/media/bannerr.08392cf0.jpg"
+  },
+  {
+    "revision": "220502d32ff181a191b3c917cc175375",
+    "url": "/AtheneWebsite/static/media/barlow-extra-light.220502d3.ttf"
+  },
+  {
+    "revision": "788f9cc4e37cde7847cd42d30bee07b7",
+    "url": "/AtheneWebsite/static/media/barlow-medium.788f9cc4.ttf"
+  },
+  {
+    "revision": "c1c92d0c804d46cb62814e7389725082",
+    "url": "/AtheneWebsite/static/media/great-vibes.c1c92d0c.ttf"
   },
   {
     "revision": "3a86787a4d84a8d9e93ee6ae89e1a29d",
@@ -296,6 +328,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AtheneWebsite/static/media/image0.b422b231.jpg"
   },
   {
+    "revision": "409c7f79a42e56c785f50ed37535f0be",
+    "url": "/AtheneWebsite/static/media/montserrat-light.409c7f79.ttf"
+  },
+  {
     "revision": "36a0f6da9863178df774d1349c986bfc",
     "url": "/AtheneWebsite/static/media/portfolio1.36a0f6da.png"
   },
@@ -326,6 +362,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d6850488115cd0e28f678180381ae913",
     "url": "/AtheneWebsite/static/media/rosettastone_resize.d6850488.png"
+  },
+  {
+    "revision": "65680fecb2d147c2678ddc8d54cde00f",
+    "url": "/AtheneWebsite/static/media/sakura.65680fec.png"
   },
   {
     "revision": "ab7f287793d84f9d1307206020919e16",
