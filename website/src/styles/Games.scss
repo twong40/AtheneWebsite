@@ -43,7 +43,7 @@ html {
 }
 
 .KO0 {
-  background-image: url("../assets/games/KillerOutfit/KillerOutfitEnvironment.png");
+  background-image: url("../assets/games/KillerOutfit/portfolio6.png");
 }
 .KO1 {
   background-color: gray;
@@ -67,7 +67,7 @@ html {
   background-image: url("../assets/games/KillerOutfit/portfolio5.png");
 }
 .KO7 {
-  background-image: url("../assets/games/KillerOutfit/portfolio6.png");
+  background-image: url("../assets/games/KillerOutfit/KillerOutfitEnvironment.png");
 }
 
 .Hemo0 {
@@ -168,13 +168,13 @@ html {
 
 .UCSC0 {
   background-color: gray;
-  background-image: url("../assets/games/UCSCGuardians/whitemidas_resize1.png");
+  background-image: url("../assets/games/UCSCGuardians/redmidas_resize.png");
   background-size: initial;
   background-repeat: no-repeat;
 }
 .UCSC1 {
   background-color: gray;
-  background-image: url("../assets/games/UCSCGuardians/redmidas_resize.png");
+  background-image: url("../assets/games/UCSCGuardians/whitemidas_resize1.png");
   background-size: initial;
   background-repeat: no-repeat;
 }
@@ -282,43 +282,6 @@ html {
   -ms-transform: scale(1);
   transform: scale(1);
 }
-.hr-title {
-  max-width: 50%;
-  text-align: center;
-  .hr-text {
-    font-family: Montserrat-Light;
-    font-size: 2rem;
-    position: relative;
-    border: 0;
-    height: 1.5em;
-    &:before {
-      content: "";
-      background: linear-gradient(to right, transparent, #b2b2b2, transparent);
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 100%;
-      height: 1px;
-    }
-    &:after {
-      content: attr(data-content);
-      position: relative;
-      display: inline-block;
-      color: black;
-
-      line-height: 1.5em;
-      color: #24bba0;
-      background-color: white;
-    }
-  }
-  li {
-    display: inline-block;
-    font-size: 14px;
-  }
-  i {
-    font-size: 7px;
-  }
-}
 
 .hr-divider {
   height: 30px;
@@ -340,5 +303,65 @@ html {
 @media only screen and (max-width: 959px) {
   .item {
     max-height: 159.183px;
+  }
+}
+
+.btn-caro:link,
+.btn-caro:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+
+.btn-caro:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.btn-caro:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-caro-white {
+  background: #8884ff;
+  color: white;
+  border-radius: 25px;
+}
+
+.btn-caro::after {
+  border-radius: 200px;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-caro-white::after {
+  background: #8884ff;
+}
+
+.btn-caro:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-caro-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

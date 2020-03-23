@@ -1,3 +1,7 @@
+.fill {
+  min-height: 100vh;
+  height: 100%;
+}
 .letter-image {
   position: absolute;
   top: 50%;
@@ -307,16 +311,17 @@ $separator-border-color: #c4c2ff;
   top: 0;
   left: 0;
   width: 100%;
-  color: #d3d3d3;
+  color: #696969;
   transition: 0.2s all;
   cursor: text;
 }
 .input-forms {
+  background: none;
   width: 100%;
   border: 0;
   outline: 0;
   padding: 0.25rem 0;
-  border-bottom: 2px solid #d3d3d3;
+  border-bottom: 3px solid #696969;
   box-shadow: none;
   color: #111;
 }

@@ -24,7 +24,6 @@ class Resume extends Component {
   render() {
     return (
       <div className="container">
-        <hr className="style-two" />
         {this.state.isMobile ? (
           <img src={resume} className="img-fluid p-3" alt="Resume"></img>
         ) : (
@@ -33,23 +32,27 @@ class Resume extends Component {
           </div>
         )}
         <hr className="style-two" />
-        <div className="text-center">
+        <div className="text-center pt-2">
           <span className="p-3 m-3">
             <a
               href="../assets/resume/AtheneYip_Resume.pdf"
-              className="c-button c-button--gooey"
+              className="blob-btn"
               download
             >
               Download Resume&nbsp;
               <img
                 src="https://img.icons8.com/clouds/100/000000/download.png"
                 width="25"
+                alt="Colorful Download"
               />
-              <div className="c-button__blobs">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
+              <span className="blob-btn__inner">
+                <span className="blob-btn__blobs">
+                  <span className="blob-btn__blob"></span>
+                  <span className="blob-btn__blob"></span>
+                  <span className="blob-btn__blob"></span>
+                  <span className="blob-btn__blob"></span>
+                </span>
+              </span>
             </a>
           </span>
           {this.state.isMobile && (
@@ -60,23 +63,26 @@ class Resume extends Component {
           <span className="p-3 m-3">
             <a
               href="../assets/resume/AtheneYip_Resume_bw.pdf"
-              className="c-button c-button--grey"
+              className="grey-blobs"
               download
             >
               Black & White Version&nbsp;
               <img
                 src="https://img.icons8.com/android/24/000000/download.png"
                 width="17"
+                alt="Black & White Download"
               />
-              <div className="c-button__blobs-grey">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
+              <span className="grey-blobs__inner">
+                <span className="grey-blobs__blobs">
+                  <span className="grey-blobs__blob"></span>
+                  <span className="grey-blobs__blob"></span>
+                  <span className="grey-blobs__blob"></span>
+                  <span className="grey-blobs__blob"></span>
+                </span>
+              </span>
             </a>
           </span>
         </div>
-
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -86,19 +92,19 @@ class Resume extends Component {
             <filter id="goo">
               <feGaussianBlur
                 in="SourceGraphic"
-                stdDeviation="10"
                 result="blur"
+                stdDeviation="10"
               ></feGaussianBlur>
               <feColorMatrix
                 in="blur"
                 mode="matrix"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
                 result="goo"
               ></feColorMatrix>
-              <feBlend in="SourceGraphic" in2="goo"></feBlend>
+              <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
             </filter>
           </defs>
-        </svg>
+        </svg>{" "}
       </div>
     );
   }

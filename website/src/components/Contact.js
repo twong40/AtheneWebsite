@@ -77,7 +77,7 @@ class Contact extends Component {
     const isValid = this.validate();
     const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.state.email);
     return (
-      <div className="container">
+      <div className="fill container">
         <br />
         <h1 className="font-barlowextralight">Contact Me</h1>{" "}
         <hr className="separator separator--line" />
@@ -151,6 +151,7 @@ class Contact extends Component {
                     <img
                       src="https://img.icons8.com/ios-glyphs/48/000000/high-importance.png"
                       width="23"
+                      alt="Error"
                     />
                     Enter a valid email address
                   </div>
@@ -196,6 +197,7 @@ class Contact extends Component {
                 <img
                   src="https://img.icons8.com/dusk/64/000000/send-mass-email.png"
                   width="23"
+                  alt="Email"
                 />
               </button>
             </form>
@@ -204,6 +206,7 @@ class Contact extends Component {
                 <img
                   src="https://img.icons8.com/ios-glyphs/48/000000/high-importance.png"
                   width="23"
+                  alt="Error"
                 />
                 {this.state.errors}
               </div>
@@ -213,6 +216,7 @@ class Contact extends Component {
                 <img
                   src="https://img.icons8.com/color/48/000000/ok--v1.png"
                   width="23"
+                  alt="Success"
                 />
                 Thanks!
               </div>

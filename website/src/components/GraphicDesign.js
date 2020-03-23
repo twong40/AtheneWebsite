@@ -69,7 +69,7 @@ class GraphicDesign extends Component {
             <a
               data-target="#carousel-graphics"
               data-slide-to="0"
-              href=""
+              href="#"
               onClick={e => this.setActive(0, e)}
             >
               <img

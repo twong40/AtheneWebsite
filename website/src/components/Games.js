@@ -121,7 +121,7 @@ class Games extends Component {
             num="8"
             slides={KOSlides}
             title="Killer Outfit"
-            btnText="View KillerOutfit"
+            btnText="View Killer Outfit"
             link="https://diamonddustgames.wixsite.com/killeroutfitgame"
           />
         </div>

@@ -48,7 +48,7 @@ class CreateCarousel extends Component {
                 <div className="display-4 p-3 overtext font-barlowmedium">
                   {this.props.title}
                 </div>
-                <div className="p-3 overtext font-barlowextralight">
+                <div className="p-3 overtext font-barlowextralight font-weight-bold">
                   {" "}
                   {leftText}
                 </div>
@@ -57,10 +57,9 @@ class CreateCarousel extends Component {
                 <br />
                 <br />
                 <br />
-                <div className="p-3 overtext font-weight-bolder">
-                  What I did:
-                </div>
-                <div className="p-3 overtext">{rightText}</div>
+                <br />
+                <h5 className="p-2 overtext font-weight-bolder">What I did:</h5>
+                <div className="p-2 overtext font-weight-bold">{rightText}</div>
               </div>
             </div>
           )}
@@ -74,9 +73,9 @@ class CreateCarousel extends Component {
     return (
       <div className="container-fluid">
         <hr className="hr-divider mb-0" />
-        <span className="hr-title">
-          <hr className="hr-text m-0" data-content={this.props.title} />
-        </span>
+        <div className="text-center font-weight-bold display-4 font-montserratlight">
+          {this.props.title}
+        </div>
         <div className="container">
           <div className="d-block w-100"></div>
         </div>
@@ -116,8 +115,11 @@ class CreateCarousel extends Component {
         </div>
         {this.props.name !== "NG" && (
           <div className="text-center">
-            <button className="btn btn-primary shadow" onClick={this.openLink}>
-              {this.props.btnText}
+            <button
+              className="btn btn-caro btn-caro-white btn-caro-animate font-montserratlight"
+              onClick={this.openLink}
+            >
+              <span className="pl-3 pr-3">{this.props.btnText}</span>
             </button>
           </div>
         )}
