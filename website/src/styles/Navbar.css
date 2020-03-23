@@ -14,7 +14,10 @@
   display: flex;
   justify-content: space-around;
 }
-
+.banner-back {
+  z-index: 1;
+  margin-bottom: -5em;
+}
 .banner-shadow {
   text-shadow: 1.75px 1.75px #5e5959;
   font-weight: bolder;

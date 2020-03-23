@@ -14,8 +14,17 @@ class App extends Component {
         <div className="App">
           <div className="container">
             <div className="row justify-content-between">
-              <div className="col-4 p-3 font-barlowextralight banner-shadow display-4">
-                Athene Yip
+              <div className="col-4 p-3 ">
+                <div className="w-50 banner-back">
+                  <img
+                    src={require("./assets/sakura.png")}
+                    className="img-fluid"
+                    alt="Resume"
+                  ></img>
+                </div>
+                <span className="font-barlowextralight banner-shadow display-4">
+                  Athene Yip
+                </span>
               </div>
               <div className="col-4 pl-5 pt-5 pr-5 pb-3">
                 <a
