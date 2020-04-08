@@ -97,11 +97,10 @@ class Games extends Component {
       <div className="container">
         <Fab
           icon="^"
-          mainButtonStyles={{ backgroundColor: "#e74ccc" }}
+          mainButtonStyles={{ backgroundColor: "#e4b5fc" }}
           onClick={this.toTop}
           text="Back to Top"
         ></Fab>
-        <br />
         <div id="shortcut" className="row">
           {preview}
         </div>

@@ -1,6 +1,6 @@
 .img-resize {
-  width: 25em; /* You can set the dimensions to whatever you want */
-  height: 30em;
+  width: 22em; /* You can set the dimensions to whatever you want */
+  height: 22em;
   object-fit: cover;
 }
 /* css */
@@ -234,9 +234,9 @@ html {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
   filter: grayscale(1) blur(3px);
   -webkit-filter: grayscale(1) blur(3px);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .hovereffect h2 {
@@ -325,7 +325,7 @@ html {
 
 .btn-caro:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgb(0, 0, 0);
 }
 
 .btn-caro-white {

@@ -8,7 +8,7 @@ const images = [
   },
   {
     id: 1,
-    src: "KillerOutfit/KillerOutfitEnvironment.png",
+    src: "KillerOutfit/portfolio5.png",
     title: "Killer Outfit",
     description: "Killer Outfit Poster",
     name: "#KO"
@@ -36,7 +36,7 @@ const images = [
   },
   {
     id: 5,
-    src: "UCSCGuardians/whitemidas_resize.png",
+    src: "UCSCGuardians/redmidas_resize.png",
     title: "Guardians of UCSC",
     description: "Guardians of UCSC Poster",
     name: "#UCSC"

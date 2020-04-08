@@ -190,51 +190,78 @@ $separator-border-color: #696969;
     width: 100%;
   }
 }
-@mixin dot {
-  $dot-size: 7px;
-  content: "";
-  background-color: $separator-border-color;
-  display: block;
-  height: $dot-size;
-  width: $dot-size;
-  border-radius: 50%;
-}
-.separator--dots {
-  overflow: visible;
+// @mixin dot {
+//   $dot-size: 7px;
+//   content: "";
+//   background-color: $separator-border-color;
+//   display: block;
+//   height: $dot-size;
+//   width: $dot-size;
+//   border-radius: 50%;
+// }
+// .separator--dots {
+//   overflow: visible;
+//   border: 0;
+//   @include dot();
+//   position: relative;
+//   &:before {
+//     @include dot();
+//     position: absolute;
+//     left: -32px;
+//     animation: dot-move-left 1s ease-out forwards;
+//   }
+//   &:after {
+//     @include dot();
+//     position: absolute;
+//     left: 32px;
+//     animation: dot-move-right 1s ease-out forwards;
+//   }
+// }
+
+// @keyframes dot-move-right {
+//   0% {
+//     left: 0;
+//   }
+//   100% {
+//     left: 32px;
+//   }
+// }
+// @keyframes dot-move-left {
+//   0% {
+//     left: 0;
+//   }
+//   100% {
+//     left: -32px;
+//   }
+// }
+// @keyframes dot-move-right2 {
+//   0% {
+//     left: 0;
+//   }
+//   100% {
+//     left: 64px;
+//   }
+// }
+// @keyframes dot-move-left2 {
+//   0% {
+//     left: 0;
+//   }
+//   100% {
+//     left: -64px;
+//   }
+// }
+.separator-side {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 0;
-  @include dot();
-  position: relative;
-  &:before {
-    @include dot();
-    position: absolute;
-    left: -32px;
-    animation: dot-move-left 1s ease-out forwards;
-  }
-  &:after {
-    @include dot();
-    position: absolute;
-    left: 32px;
-    animation: dot-move-right 1s ease-out forwards;
-  }
 }
+.separator--dotter {
+  border: 0;
+  border-bottom: 5px dotted black;
 
-@keyframes dot-move-right {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 32px;
-  }
+  width: 0;
+  animation: separator-width 1.5s ease-out forwards;
 }
-@keyframes dot-move-left {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -32px;
-  }
-}
-
 .btn-send {
   background-color: #c4c2ff;
 }

@@ -22,8 +22,8 @@ class App extends Component {
                     alt="Resume"
                   ></img>
                 </div>
-                <span className="font-barlowextralight banner-shadow display-4">
-                  Athene Yip
+                <span className="font-barlowcondensed banner-shadow display-4">
+                  ATHENE YIP
                 </span>
               </div>
               <div className="col-4 pl-5 pt-5 pr-5 pb-3">
@@ -35,6 +35,7 @@ class App extends Component {
                   <img
                     className="mx-auto p-1 rounded float-right"
                     src={require("./assets/twitter.png")}
+                    width="60"
                     alt="Twitter"
                   />
                 </a>
@@ -46,6 +47,7 @@ class App extends Component {
                   <img
                     className="mx-auto p-1 rounded float-right"
                     src={require("./assets/linkedin.png")}
+                    width="60"
                     alt="LinkedIn"
                   />
                 </a>
@@ -65,22 +67,22 @@ class App extends Component {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                <div className="navbar-nav custom-navbar-mr font-montserratlight">
+                <div className="navbar-nav custom-navbar-mr font-barlowcondensed font-weight-bold">
                   <Link
-                    className="navbar-brand nav-link active hvr-underline-from-center"
+                    className="navbar-brand nav-link active nav-fill nav-text"
                     to="/Athene"
                   >
-                    Home
+                    HOME
                   </Link>
                   <div className="nav-item active dropdown">
                     <span
-                      className="navbar-brand nav-link dropdown-toggle hvr-underline-from-center"
+                      className="navbar-brand nav-link dropdown-toggle nav-fill nav-text"
                       id="navbarDropdownMenuLink"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Portfolio
+                      PORTFOLIO
                     </span>
                     <div
                       className="dropdown-menu"
@@ -88,34 +90,34 @@ class App extends Component {
                     >
                       <div className="dropdown-item">
                         <Link
-                          className="navbar-brand nav-link active hvr-underline-from-center"
+                          className="navbar-brand nav-link active nav-fill nav-text"
                           to="/Athene/games"
                         >
-                          Games
+                          GAMES
                         </Link>
                       </div>
                       <div className="dropdown-divider"></div>
                       <div className="dropdown-item">
                         <Link
-                          className="navbar-brand nav-link active hvr-underline-from-center"
+                          className="navbar-brand nav-link active nav-fill nav-text"
                           to="/Athene/graphicDesign"
                         >
-                          Graphic Design
+                          GRAPHIC DESIGN
                         </Link>
                       </div>
                     </div>
                   </div>
                   <Link
-                    className="navbar-brand nav-link active hvr-underline-from-center"
+                    className="navbar-brand nav-link active nav-fill nav-text"
                     to="/Athene/resume"
                   >
-                    Resume
+                    RESUME
                   </Link>
                   <Link
-                    className="navbar-brand nav-link active hvr-underline-from-center"
+                    className="navbar-brand nav-link active nav-fill nav-text"
                     to="/Athene/contact"
                   >
-                    Contact
+                    CONTACT
                   </Link>
                 </div>
               </div>
@@ -140,7 +142,8 @@ class App extends Component {
             </Switch>
             <span className="font-barlowextralight">
               <img
-                src="https://img.icons8.com/material-outlined/24/000000/copyright.png"
+                src="https://img.icons8.com/wired/64/000000/copyright.png"
+                width="23"
                 alt="copyright"
               />
               &nbsp;2020 by Athene Yip

@@ -16,7 +16,8 @@
   background-color: #8884ff;
 }
 .home-title {
-  font-size: 2.1em;
+  font-size: 2.4em;
+  letter-spacing: 2px;
 }
 .home-list {
   font-size: 1.1em;
@@ -35,7 +36,11 @@
 }
 @font-face {
   font-family: Montserrat-Light;
-  src: url("../assets/fonts/montserrat-light.ttf") format("truetype");
+  src: url("../assets/fonts/montserrat-light.ttf");
+}
+@font-face {
+  font-family: Barlow-Condensed;
+  src: url("../assets/fonts/barlow-condensed-regular.ttf") format("truetype");
 }
 .font-greatvibes {
   font-family: Great-Vibes;
@@ -48,4 +53,7 @@
 }
 .font-montserratlight {
   font-family: Montserrat-Light;
+}
+.font-barlowcondensed {
+  font-family: Barlow-Condensed;
 }

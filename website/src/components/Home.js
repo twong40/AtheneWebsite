@@ -26,7 +26,7 @@ class Home extends Component {
               <br />
               <br />
               <br />
-              <span className="pr-3 mr-3 text-left text-wrap font-montserratlight home-title">
+              <span className="pr-3 mr-3 text-left text-wrap font-barlowcondensed home-title">
                 TECHNICAL <br /> SKILLS
               </span>
             </div>
@@ -66,7 +66,7 @@ class Home extends Component {
               <br />
               <br />
               <br />
-              <span className="pr-3 mr-3 text-left text-wrap font-montserratlight home-title">
+              <span className="pr-3 mr-3 text-left text-wrap font-barlowcondensed home-title">
                 SOFT <br />
                 SKILLS
               </span>
@@ -108,7 +108,7 @@ class Home extends Component {
               <br />
               <br />
               <br />
-              <span className="pr-3 mr-3 text-left text-wrap font-montserratlight home-title">
+              <span className="pr-3 mr-3 text-left text-wrap font-barlowcondensed home-title">
                 CURRENT <br />
                 PROJECTS
                 <br />

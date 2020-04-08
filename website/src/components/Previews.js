@@ -12,7 +12,7 @@ class previews extends Component {
   }
   render() {
     return (
-      <div className={this.props.isMobile ? "container p-3" : "col-4 p-3"}>
+      <div className={this.props.isMobile ? "container p-3" : "col-4 p-2"}>
         <div className="hovereffect rounded font-montserratlight">
           <img
             className="img-resize img-fluid"

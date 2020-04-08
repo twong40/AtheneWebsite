@@ -80,7 +80,7 @@ class Contact extends Component {
       <div className="fill container">
         <br />
         <h1 className="font-barlowextralight">Contact Me</h1>{" "}
-        <hr className="separator separator--line" />
+        {/* <hr className="separator separator--line" /> */}
         <div className="row">
           <div className="col-md-3">
             <div className="letter-image">
@@ -102,13 +102,13 @@ class Contact extends Component {
             </div>
           </div>
           <div className="col-md-3 font-barlowextralight">
-            <hr className="separator separator--dots" />
+            <hr className="separator-side separator--dotter" />
             <span className="pl-5">
               Email:
               <br />
               <span className="pl-5">athene.yip@gmail.com</span>
             </span>
-            <hr className="separator separator--dots" />
+            <hr className="separator-side separator--dotter" />
           </div>
           <div className="col-md-5 font-montserratlight">
             <form onSubmit={this.handleSubmit}>
