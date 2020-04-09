@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "19ad4a2bb4b400f7cd1387aad078e39e",
+    "revision": "f3f132f83bed3d8f058488d392620fbb",
     "url": "/AtheneWebsite/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AtheneWebsite/static/css/2.64f487c0.chunk.css"
   },
   {
-    "revision": "42ec5f056b2f0629b162",
-    "url": "/AtheneWebsite/static/css/main.5d92c095.chunk.css"
+    "revision": "5aaecab69a5fe05cef62",
+    "url": "/AtheneWebsite/static/css/main.d8d3cdfe.chunk.css"
   },
   {
     "revision": "59bb9863cfbb332046a9",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AtheneWebsite/static/js/2.739a913d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "42ec5f056b2f0629b162",
-    "url": "/AtheneWebsite/static/js/main.ef109ef6.chunk.js"
+    "revision": "5aaecab69a5fe05cef62",
+    "url": "/AtheneWebsite/static/js/main.f985cbe0.chunk.js"
   },
   {
     "revision": "9dae4fd7db5e8724a8f5",
@@ -282,6 +282,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "08392cf08edf41e87ef762ac66a6f0ea",
     "url": "/AtheneWebsite/static/media/bannerr.08392cf0.jpg"
+  },
+  {
+    "revision": "53a17088024b346c54ca3e5bf8cc15ee",
+    "url": "/AtheneWebsite/static/media/barlow-condensed-regular.53a17088.ttf"
   },
   {
     "revision": "220502d32ff181a191b3c917cc175375",
