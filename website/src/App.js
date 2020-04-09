@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "./styles/Navbar.css";
+import "./styles/Navbar.scss";
 import "./App.css";
 import Contact from "./components/Contact";
 import Games from "./components/Games";
@@ -68,15 +68,12 @@ class App extends Component {
               </button>
               <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <div className="navbar-nav custom-navbar-mr font-barlowcondensed font-weight-bold">
-                  <Link
-                    className="navbar-brand nav-link active nav-fill nav-text"
-                    to="/Athene"
-                  >
+                  <Link className="mt-3 active nav-text nav-hvr" to="/Athene">
                     HOME
                   </Link>
-                  <div className="nav-item active dropdown">
+                  <div className="mt-3 nav-item active dropdown nav-hvr">
                     <span
-                      className="navbar-brand nav-link dropdown-toggle nav-fill nav-text"
+                      className=" dropdown-toggle nav-fill nav-text"
                       id="navbarDropdownMenuLink"
                       data-toggle="dropdown"
                       aria-haspopup="true"
@@ -90,7 +87,7 @@ class App extends Component {
                     >
                       <div className="dropdown-item">
                         <Link
-                          className="navbar-brand nav-link active nav-fill nav-text"
+                          className="nav-link active nav-fill nav-text hvr-underline-from-center"
                           to="/Athene/games"
                         >
                           GAMES
@@ -99,7 +96,7 @@ class App extends Component {
                       <div className="dropdown-divider"></div>
                       <div className="dropdown-item">
                         <Link
-                          className="navbar-brand nav-link active nav-fill nav-text"
+                          className="nav-link active nav-fill nav-text hvr-underline-from-center"
                           to="/Athene/graphicDesign"
                         >
                           GRAPHIC DESIGN
@@ -108,13 +105,13 @@ class App extends Component {
                     </div>
                   </div>
                   <Link
-                    className="navbar-brand nav-link active nav-fill nav-text"
+                    className="mt-3 active nav-text nav-hvr"
                     to="/Athene/resume"
                   >
                     RESUME
                   </Link>
                   <Link
-                    className="navbar-brand nav-link active nav-fill nav-text"
+                    className="mt-3 active nav-text nav-hvr"
                     to="/Athene/contact"
                   >
                     CONTACT

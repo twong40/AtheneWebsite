@@ -8,7 +8,7 @@ class Home extends Component {
         'My name is Athene Yip (pronounced "Ut-thee-nee") and I\'m an ' +
         "environment and prop artist. I do both 2D and 3D art. I recently " +
         "graduated from the University of California, Santa Cruz with a BA " +
-        "in game design."
+        "in game design.",
     };
   }
   render() {
