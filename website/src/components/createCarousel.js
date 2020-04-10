@@ -73,9 +73,6 @@ class CreateCarousel extends Component {
     return (
       <div className="container-fluid">
         <hr className="hr-divider mb-0" />
-        <div className="text-center font-weight-bold display-4 font-montserratlight">
-          {this.props.title}
-        </div>
         <div className="container">
           <div className="d-block w-100"></div>
         </div>

@@ -9,49 +9,49 @@ const KOSlides = [
       "boutique has been burned down by the Fashion Police. Change your clothes " +
       "to change your moves and fight back against conformity! Looking good means " +
       "feeling good, which directly translates to fighting skills. The Fashion " +
-      "Police wont know what hit them!",
+      "Police won't know what hit them!",
     rightText:
       "Concepted and created most of the environment assets. Worked with the " +
       "lead level designer to make a cohesive level and environment that would " +
       "be easy to understand. Concepted and finalized the color palette. " +
       "Participated in team meetings about art design and direction. Managed " +
-      "tasks for the environment team."
+      "tasks for the environment team.",
   },
   {
     id: 1,
     leftText: "",
-    rightText: ""
+    rightText: "",
   },
   {
     id: 2,
     leftText: "",
-    rightText: ""
+    rightText: "",
   },
   {
     id: 3,
     leftText: "",
-    rightText: ""
+    rightText: "",
   },
   {
     id: 4,
     leftText: "",
-    rightText: ""
+    rightText: "",
   },
   {
     id: 5,
     leftText: "",
-    rightText: ""
+    rightText: "",
   },
   {
     id: 6,
     leftText: "",
-    rightText: ""
+    rightText: "",
   },
   {
     id: 7,
     leftText: "",
-    rightText: ""
-  }
+    rightText: "",
+  },
 ];
 
 export default KOSlides;

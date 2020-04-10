@@ -5,7 +5,7 @@ class Home extends Component {
     super(props);
     this.state = {
       intro:
-        'My name is Athene Yip (pronounced "Ut-thee-nee") and I\'m an ' +
+        'My name is Athene Yip (pronounced "Uh-thee-nee") and I\'m an ' +
         "environment and prop artist. I do both 2D and 3D art. I recently " +
         "graduated from the University of California, Santa Cruz with a BA " +
         "in game design.",
@@ -34,27 +34,27 @@ class Home extends Component {
               <ul className="pr-3 pt-3 pl-5 font-barlowextralight home-list">
                 <br />
                 <li>Adobe Photoshop</li>
-                <li>Adobe Illistrator</li>
-                <li>Affinitiy Designer</li>
-                <li>Paint.NET</li>
-                <li>Blender</li>
+                <li>Adobe Illustrator</li>
+                <li>Affinity Photo</li>
+                <li>Affinity Designer</li>
+                <li>Affinity Publisher</li>
               </ul>
             </div>
             <div className="col-md-3 box-data-1">
               <ul className="pr-3 pt-3 pl-5 font-barlowextralight home-list">
                 <br />
+                <li>Paint.NET</li>
+                <li>Blender</li>
                 <li>Maya</li>
                 <li>ZBrush</li>
                 <li>Substance Painter</li>
-                <li>Tiled</li>
-                <li>Font Forge</li>
               </ul>
             </div>
             <div className="col-md-3 box-data-1">
-              <ul className="pr-3 pl-5 font-barlowextralight home-list">
+              <ul className="pr-3 pt-3 pl-5 font-barlowextralight home-list">
                 <br />
-                Learning:
-                <li>Unity</li>
+                <li>Tiled</li>
+                <li>Font Forge</li>
               </ul>
             </div>
           </div>
@@ -95,7 +95,7 @@ class Home extends Component {
                 <li>Organized</li>
                 <li>Punctual</li>
                 <li>Quick Learner</li>
-                <li>Works well under pressure</li>
+                <li>Works Well Under Pressure</li>
                 <li>Adaptable</li>
               </ul>
             </div>
@@ -120,7 +120,7 @@ class Home extends Component {
                 <br />
                 <br />
                 <li className="text-wrap pr-4 pt-3 pb-3 font-barlowextralight home-list">
-                  Squish: A compeptitive party game where you must dodge and
+                  Squish: A competitive party game where you must dodge and
                   rearrange blocks to be the last survivor. Think Tetris, but
                   you are stuck in it!
                 </li>

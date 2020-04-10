@@ -140,7 +140,7 @@ class App extends Component {
             <span className="font-barlowextralight">
               <img
                 src="https://img.icons8.com/wired/64/000000/copyright.png"
-                width="23"
+                width="16"
                 alt="copyright"
               />
               &nbsp;2020 by Athene Yip
