@@ -10,7 +10,7 @@ const squishSlides = [
       "Those quick with their wit and quicker on their feet will be able to shape " +
       "the terrain and climb to safety while also trapping their enemies in a gooey " +
       "demise. The last SkeleGoo standing wins the round, and the first partier to " +
-      "to three victories is the Squish Champion!",
+      "the three victories is the Squish Champion!",
     rightText:
       "Concepted different arena designs and props. Created 3D environment assets " +
       "relating to the dance parties and catacombs in the game. Unwrapped and " +
