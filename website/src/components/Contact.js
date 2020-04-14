@@ -12,7 +12,7 @@ class Contact extends Component {
       subject: "",
       loading: false,
       status: "",
-      errors: ""
+      errors: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -31,7 +31,7 @@ class Contact extends Component {
       message: "",
       email: "",
       name: "",
-      subject: ""
+      subject: "",
     });
   }
   handleServerResponse = (ok, msg) => {
@@ -39,14 +39,14 @@ class Contact extends Component {
       this.setState({
         errors: "",
         loading: false,
-        status: "SUCCESS"
+        status: "SUCCESS",
       });
       this.resetForm();
     } else {
       this.setState({
         errors: msg,
         loading: false,
-        status: "ERROR"
+        status: "ERROR",
       });
       this.resetForm();
     }
@@ -54,7 +54,7 @@ class Contact extends Component {
   handleSubmit(e) {
     e.preventDefault();
     this.setState({
-      loading: true
+      loading: true,
     });
     axios({
       method: "POST",
@@ -63,13 +63,13 @@ class Contact extends Component {
         name: this.state.name,
         email: this.state.email,
         subject: this.state.subject,
-        message: this.state.message
-      }
+        message: this.state.message,
+      },
     })
-      .then(res => {
+      .then((res) => {
         this.handleServerResponse(true, "");
       })
-      .catch(res => {
+      .catch((res) => {
         this.handleServerResponse(false, res.response.data.error);
       });
   }
@@ -123,7 +123,7 @@ class Contact extends Component {
                   onChange={this.handleChange}
                   required
                 />
-                <label className="label-forms pt-2" for="name">
+                <label className="label-forms pt-2" htmlFor="name">
                   Your Name:
                 </label>
               </div>
@@ -138,7 +138,7 @@ class Contact extends Component {
                   onChange={this.handleChange}
                   required
                 />
-                <label className="label-forms pt-2" for="email">
+                <label className="label-forms pt-2" htmlFor="email">
                   Your Email:
                 </label>
                 {this.state.email && !isEmail && (
@@ -168,7 +168,7 @@ class Contact extends Component {
                   onChange={this.handleChange}
                   required
                 />
-                <label className="label-forms pt-2" for="subject">
+                <label className="label-forms pt-2" htmlFor="subject">
                   The Subject:
                 </label>
               </div>
@@ -183,7 +183,7 @@ class Contact extends Component {
                   onChange={this.handleChange}
                   required
                 />
-                <label className="label-forms pt-2" for="message">
+                <label className="label-forms pt-2" htmlFor="message">
                   The Message:
                 </label>
               </div>
