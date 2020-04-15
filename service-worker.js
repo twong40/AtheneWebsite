@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AtheneWebsite/precache-manifest.edaa37c2adf46247f5bb28ab9230b152.js"
+  "/AtheneWebsite/precache-manifest.76de33ce69aefd4ca9675177daf6b947.js"
 );
 
 self.addEventListener('message', (event) => {
