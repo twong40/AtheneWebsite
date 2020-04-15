@@ -143,7 +143,7 @@ class App extends Component {
                 width="16"
                 alt="copyright"
               />
-              &nbsp;2020 by Athene Yip
+              &nbsp; 2020 by Athene Yip
             </span>
           </div>
         </div>
