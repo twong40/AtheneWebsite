@@ -93,7 +93,7 @@ class App extends Component {
                           GAMES
                         </Link>
                       </div>
-                      <div className="dropdown-divider"></div>
+                      {/* <div className="dropdown-divider"></div>
                       <div className="dropdown-item">
                         <Link
                           className="nav-link active nav-fill nav-text hvr-underline-from-center"
@@ -101,7 +101,7 @@ class App extends Component {
                         >
                           GRAPHIC DESIGN
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <Link
