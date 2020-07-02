@@ -11,6 +11,10 @@ class App extends Component {
   render() {
     return (
       <Router>
+        <meta
+          http-equiv="Content-Security-Policy"
+          content="default-src * 'self' 'unsafe-inline' 'unsafe-eval'"
+        ></meta>
         <div className="App">
           <div className="container">
             <div className="row justify-content-between">
