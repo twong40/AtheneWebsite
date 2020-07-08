@@ -27,7 +27,7 @@ class Games extends Component {
       df2Ref: React.createRef(),
       ngRef: React.createRef(),
       ucscRef: React.createRef(),
-      otherRef: React.createRef()
+      otherRef: React.createRef(),
     };
     this.handleScroll = this.handleScroll.bind(this);
     this.toTop = this.toTop.bind(this);
@@ -40,7 +40,7 @@ class Games extends Component {
   componentWillUnmount() {
     window.removeEventListener("resize", this.resize);
   }
-  toTop = e => {
+  toTop = (e) => {
     e.preventDefault();
     window.scrollTo(0, 0);
   };
@@ -107,7 +107,7 @@ class Games extends Component {
         <div ref={this.state.squishRef}>
           <CreateCarousel
             name="Squish"
-            num="8"
+            num="13"
             slides={squishSlides}
             title="Squish"
             btnText="View and Play Squish"
