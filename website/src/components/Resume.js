@@ -35,13 +35,14 @@ class Resume extends Component {
         <div className="text-center pt-2">
           <span className="p-3 m-3">
             <a
-              href="../assets/resume/AtheneYip_Resume.pdf"
+              href="https://raw.githubusercontent.com/twong40/AtheneWebsite/master/website/src/assets/resume/AtheneYip_Resume.pdf"
               className="blob-btn"
+              target="_blank"
               download
             >
               Download Resume&nbsp;
               <img
-                src="https://img.icons8.com/clouds/100/000000/download.png"
+                src="https://img.icons8.com/plasticine/100/000000/download.png"
                 width="25"
                 alt="Colorful Download"
               />
@@ -62,8 +63,9 @@ class Resume extends Component {
           )}
           <span className="p-3 m-3">
             <a
-              href="../assets/resume/AtheneYip_Resume_bw.pdf"
+              href="https://raw.githubusercontent.com/twong40/AtheneWebsite/master/website/src/assets/resume/AtheneYip_Resume_bw.pdf"
               className="grey-blobs"
+              target="_blank"
               download
             >
               Black & White Version&nbsp;

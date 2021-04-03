@@ -21,40 +21,25 @@ html {
   background-image: url("../assets/games/Squish/SquishPoster.png");
 }
 .Squish1 {
-  background-image: url("../assets/games/Squish/TitleScreen_4K.png");
+  background-image: url("../assets/games/Squish/TitleScreen_4K.jpg");
 }
 .Squish2 {
-  background-image: url("../assets/games/Squish/Squish Lobby.png");
+  background-image: url("../assets/games/Squish/Squish Lobby.jpg");
 }
 .Squish3 {
-  background-image: url("../assets/games/Squish/Ready Stage.png");
+  background-image: url("../assets/games/Squish/Squish1.jpg");
 }
 .Squish4 {
-  background-image: url("../assets/games/Squish/Starting Formation.png");
+  background-image: url("../assets/games/Squish/Squish2.jpg");
 }
 .Squish5 {
-  background-image: url("../assets/games/Squish/SquishRave3.png");
+  background-image: url("../assets/games/Squish/Squish3.jpg");
 }
 .Squish6 {
-  background-image: url("../assets/games/Squish/SquishWin.png");
+  background-image: url("../assets/games/Squish/Squish4.jpg");
 }
 .Squish7 {
-  background-image: url("../assets/games/Squish/Squish Bomb Block.png");
-}
-.Squish8 {
-  background-image: url("../assets/games/Squish/CrystalCaves1.png");
-}
-.Squish9 {
-  background-image: url("../assets/games/Squish/CrystalCaves0.png");
-}
-.Squish10 {
-  background-image: url("../assets/games/Squish/TG0.png");
-}
-.Squish11 {
-  background-image: url("../assets/games/Squish/TG1.png");
-}
-.Squish12 {
-  background-image: url("../assets/games/Squish/DJTable.png");
+  background-image: url("../assets/games/Squish/Squish5.jpg");
 }
 
 .KO0 {
@@ -140,7 +125,7 @@ html {
 }
 .Df25 {
   background-image: url("../assets/games/DinnerForTwo/20180311_163435.jpg");
-  transform: rotate(90deg) scale(1.75, 1.75);
+  transform: rotate(270deg) scale(1.55, 1.55);
   background-color: gray;
 }
 
@@ -210,10 +195,6 @@ html {
 }
 .UCSC6 {
   background-image: url("../assets/games/UCSCGuardians/image0\ \(2\).jpg");
-}
-
-.other {
-  background-image: url("../assets/games/Other/MagicTree.png");
 }
 
 .hidden {

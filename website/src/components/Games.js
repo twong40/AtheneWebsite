@@ -27,7 +27,6 @@ class Games extends Component {
       df2Ref: React.createRef(),
       ngRef: React.createRef(),
       ucscRef: React.createRef(),
-      otherRef: React.createRef(),
     };
     this.handleScroll = this.handleScroll.bind(this);
     this.toTop = this.toTop.bind(this);
@@ -64,9 +63,6 @@ class Games extends Component {
         break;
       case "Guardians of UCSC":
         window.scrollTo(0, this.state.ucscRef.current.offsetTop);
-        break;
-      case "Other 3D Work":
-        window.scrollTo(0, this.state.otherRef.current.offsetTop);
         break;
       default:
         return;
@@ -107,7 +103,7 @@ class Games extends Component {
         <div ref={this.state.squishRef}>
           <CreateCarousel
             name="Squish"
-            num="13"
+            num="8"
             slides={squishSlides}
             title="Squish"
             btnText="View and Play Squish"
@@ -165,17 +161,6 @@ class Games extends Component {
           />
         </div>
         <hr className="hr-divider" />
-        <div ref={this.state.otherRef} className="container-fluid p-3">
-          <div className="slides other">
-            <div className="row justify-content-around">
-              <div className="col-4">
-                <div className="display-3 p-3 overtext">Other Work</div>
-              </div>
-              <div className="col-4"></div>
-            </div>
-          </div>
-        </div>
-        <hr />
       </div>
     );
   }

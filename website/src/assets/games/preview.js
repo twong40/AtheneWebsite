@@ -40,13 +40,6 @@ const images = [
     title: "Guardians of UCSC",
     description: "Guardians of UCSC Poster",
     name: "#UCSC"
-  },
-  {
-    id: 6,
-    src: "Other/MagicTree.png",
-    title: "Other 3D Work",
-    description: "Other 3D Work Poster",
-    name: "#Other"
   }
 ];
 

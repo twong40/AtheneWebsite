@@ -4,7 +4,6 @@ import "./styles/Navbar.scss";
 import "./App.css";
 import Contact from "./components/Contact";
 import Games from "./components/Games";
-import GraphicDesign from "./components/GraphicDesign";
 import Home from "./components/Home";
 import Resume from "./components/Resume";
 class App extends Component {
@@ -35,7 +34,7 @@ class App extends Component {
                   <img
                     className="mx-auto p-1 rounded float-right"
                     src={require("./assets/twitter.png")}
-                    width="60"
+                    width="45"
                     alt="Twitter"
                   />
                 </a>
@@ -47,7 +46,7 @@ class App extends Component {
                   <img
                     className="mx-auto p-1 rounded float-right"
                     src={require("./assets/linkedin.png")}
-                    width="60"
+                    width="45"
                     alt="LinkedIn"
                   />
                 </a>
@@ -124,9 +123,6 @@ class App extends Component {
               <Route path="/Athene/games">
                 <Games />
               </Route>
-              <Route path="/Athene/graphicDesign">
-                <GraphicDesign />
-              </Route>
               <Route path="/Athene/resume">
                 <Resume />
               </Route>
@@ -143,7 +139,7 @@ class App extends Component {
                 width="16"
                 alt="copyright"
               />
-              &nbsp; 2020 by Athene Yip
+              &nbsp; 2021 by Athene Yip
             </span>
           </div>
         </div>

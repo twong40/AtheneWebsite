@@ -1,24 +1,11 @@
 import React, { Component } from "react";
 import "../styles/Home.css";
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      intro:
-        'My name is Athene Yip (pronounced "Uh-thee-nee") and I\'m an ' +
-        "environment and prop artist. I do both 2D and 3D art. I recently " +
-        "graduated from the University of California, Santa Cruz with a BA " +
-        "in game design.",
-    };
-  }
   render() {
     return (
       <div className="container">
         <br />
         <p className="text-center display-1 font-greatvibes">Hi there!</p>
-        <p className="lead pr-5 pl-5">{this.state.intro}</p>
-        <br />
-        <p className="display-4 font-barlowextralight">At a Quick Glance:</p>
         <div className="container box-container align-self-center p-4">
           <div className="row">
             <div className="col-md-3 box-tag-1">

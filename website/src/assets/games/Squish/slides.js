@@ -52,32 +52,7 @@ const squishSlides = [
     id: 7,
     leftText: "",
     rightText: "",
-  },
-  {
-    id: 8,
-    leftText: "",
-    rightText: "",
-  },
-  {
-    id: 9,
-    leftText: "",
-    rightText: "",
-  },
-  {
-    id: 10,
-    leftText: "",
-    rightText: "",
-  },
-  {
-    id: 11,
-    leftText: "",
-    rightText: "",
-  },
-  {
-    id: 12,
-    leftText: "",
-    rightText: "",
-  },
+  }
 ];
 
 export default squishSlides;
